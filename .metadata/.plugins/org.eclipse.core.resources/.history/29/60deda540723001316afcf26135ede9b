@@ -1,9 +1,0 @@
-package pkgClases;
-
-public class clsStudent {
-
-	public clsStudent() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
