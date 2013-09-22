@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package pkgClases;
+
+/** 
+ * @author Familia
+ */
+public class clsPracticalSubject {
+
+	/**
+	 * 
+	 */
+	public clsPracticalSubject() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

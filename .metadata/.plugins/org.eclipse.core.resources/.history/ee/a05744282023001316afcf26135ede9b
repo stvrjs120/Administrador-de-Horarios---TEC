@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package pkgClases;
+
+/** 
+ * @author Familia
+ */
+public abstract class clsSubject {
+
+	/**
+	 * @uml.property  name="SubjectName"
+	 */
+	private String subjectName;
+
+	/**
+	 * Getter of the property <tt>SubjectName</tt>
+	 * @return  Returns the subjectName.
+	 * @uml.property  name="SubjectName"
+	 */
+	public String getSubjectName() {
+		return subjectName;
+	}
+
+	/**
+	 * Setter of the property <tt>SubjectName</tt>
+	 * @param SubjectName  The subjectName to set.
+	 * @uml.property  name="SubjectName"
+	 */
+	public void setSubjectName(String subjectName) {
+		this.subjectName = subjectName;
+	}
+
+}

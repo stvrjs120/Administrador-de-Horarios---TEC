@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package pkgClases;
+
+/** 
+ * @author Familia
+ */
+public class clsTheoricalSubject extends clsSubject {
+
+	/**
+	 * 
+	 */
+	public clsTheoricalSubject() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * Theorical Subject's website
+	 * @uml.property  name="Website"
+	 */
+	private String website;
+
+	/**
+	 * Getter of the property <tt>Website</tt>
+	 * @return  Returns the website.
+	 * @uml.property  name="Website"
+	 */
+	public String getWebsite() {
+		return website;
+	}
+
+	/**
+	 * Setter of the property <tt>Website</tt>
+	 * @param Website  The website to set.
+	 * @uml.property  name="Website"
+	 */
+	public void setWebsite(String website) {
+		this.website = website;
+	}
+
+}

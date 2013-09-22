@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package pkgClases;
+
+/** 
+ * @author Familia
+ */
+public class clsEquipment {
+
+	/**
+	 * @uml.property  name="Amount"
+	 */
+	private int amount;
+
+	/**
+	 * Getter of the property <tt>Amount</tt>
+	 * @return  Returns the amount.
+	 * @uml.property  name="Amount"
+	 */
+	public int getAmount() {
+		return amount;
+	}
+
+	/**
+	 * Setter of the property <tt>Amount</tt>
+	 * @param Amount  The amount to set.
+	 * @uml.property  name="Amount"
+	 */
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+
+}

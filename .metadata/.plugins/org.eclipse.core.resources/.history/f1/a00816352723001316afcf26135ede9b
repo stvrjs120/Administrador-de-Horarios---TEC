@@ -1,0 +1,95 @@
+/**
+ * 
+ */
+package pkgClases;
+
+/** 
+ * @author Familia
+ */
+public class clsSchedule {
+
+	/**
+	 * Schedule's day
+	 * @uml.property  name="Day"
+	 */
+	private String day;
+
+	/**
+	 * Getter of the property <tt>Day</tt>
+	 * @return  Returns the day.
+	 * @uml.property  name="Day"
+	 */
+	public String getDay() {
+		return day;
+	}
+
+	/**
+	 * Setter of the property <tt>Day</tt>
+	 * @param Day  The day to set.
+	 * @uml.property  name="Day"
+	 */
+	public void setDay(String day) {
+		this.day = day;
+	}
+
+	/**
+	 * Schedule starting at [date]
+	 * @uml.property  name="StarSchedule"
+	 */
+	private String starSchedule;
+
+	/**
+	 * Getter of the property <tt>StarSchedule</tt>
+	 * @return  Returns the starSchedule.
+	 * @uml.property  name="StarSchedule"
+	 */
+	public String getStarSchedule() {
+		return starSchedule;
+	}
+
+	/**
+	 * Setter of the property <tt>StarSchedule</tt>
+	 * @param StarSchedule  The starSchedule to set.
+	 * @uml.property  name="StarSchedule"
+	 */
+	public void setStarSchedule(String starSchedule) {
+		this.starSchedule = starSchedule;
+	}
+
+	/**
+	 * Schedule ending at [date]
+	 * @uml.property  name="endSchedule"
+	 */
+	private String endSchedule;
+
+	/**
+	 * Getter of the property <tt>endSchedule</tt>
+	 * @return  Returns the endSchedule.
+	 * @uml.property  name="endSchedule"
+	 */
+	public String getEndSchedule() {
+		return endSchedule;
+	}
+
+	/**
+	 * Setter of the property <tt>endSchedule</tt>
+	 * @param endSchedule  The endSchedule to set.
+	 * @uml.property  name="endSchedule"
+	 */
+	public void setEndSchedule(String endSchedule) {
+		this.endSchedule = endSchedule;
+	}
+	
+	/**
+	 * Schedule class constructor
+	 * 
+	 * @param pDay
+	 * @param pStartSchedule
+	 * @param pEndSchedule
+	 */
+	public clsSchedule(String pDay, String pStartSchedule, String pEndSchedule){
+		day = pDay;
+		starSchedule = pStartSchedule;
+		pEndSchedule = pEndSchedule;
+	}
+}

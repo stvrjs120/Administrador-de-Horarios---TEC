@@ -1,0 +1,63 @@
+/**
+ * 
+ */
+package pkgClases;
+
+/** 
+ * @author Familia
+ */
+public class clsEquipment {
+
+	/**
+	 * @uml.property  name="Amount"
+	 */
+	private int amount;
+
+	/**
+	 * Getter of the property <tt>Amount</tt>
+	 * @return  Returns the amount.
+	 * @uml.property  name="Amount"
+	 */
+	public int getAmount() {
+		return amount;
+	}
+
+	/**
+	 * Setter of the property <tt>Amount</tt>
+	 * @param Amount  The amount to set.
+	 * @uml.property  name="Amount"
+	 */
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+
+	/**
+	 * @uml.property  name="Equipment"
+	 */
+	private String equipment;
+
+	/**
+	 * Getter of the property <tt>Equipment</tt>
+	 * @return  Returns the equipment.
+	 * @uml.property  name="Equipment"
+	 */
+	public String getEquipment() {
+		return equipment;
+	}
+
+	/**
+	 * Setter of the property <tt>Equipment</tt>
+	 * @param Equipment  The equipment to set.
+	 * @uml.property  name="Equipment"
+	 */
+	public void setEquipment(String equipment) {
+		this.equipment = equipment;
+	}
+
+		
+		/**
+		 */
+		public clsEquipment(int pAmount, String pEquipment){
+		}
+
+}

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1102,633" id="pkgClases" metadata="uml2-1.0" initialized="true" scrolledX="358" scrolledY="159" tag="10" key="32303037303533312D31302070726A41646D696E534348554E49">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.2/@sourceConnections.0 //@children.3/@sourceConnections.1 //@children.2/@sourceConnections.1 //@children.1/@sourceConnections.1 //@children.3/@sourceConnections.0" name="clsUser" location="219,45" size="126,121" id="pkgClases/clsUser" runTimeClassModel="Name,clsUser(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),Password,ID">
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="ID" id="pkgClases/clsUser#ID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="Name" id="pkgClases/clsUser#Name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="Password" id="pkgClases/clsUser#Password"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="67,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsUser" id="pkgClases/clsUser#clsUser(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="clsTeacher" location="75,219" size="121,85" id="pkgClases/clsTeacher" runTimeClassModel="clsTeacher(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),Schedule">
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="Schedule" id="pkgClases/clsTeacher#Schedule"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="83,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsTeacher" id="pkgClases/clsTeacher#clsTeacher(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="pkgClases/clsUser&lt;-pkgClases/clsTeacher" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="100,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="19,121"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser*pkgClases/clsTeacher->pkgClases/clsUser" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="100,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="6,121"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="clsStudent" location="228,219" size="108,67" id="pkgClases/clsStudent" runTimeClassModel="clsStudent(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="81,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsStudent" id="pkgClases/clsStudent#clsStudent(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pkgClases/clsUser&lt;-pkgClases/clsStudent" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="54,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="63,121"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pkgClases/clsStudent->pkgClases/clsUser*pkgClases/clsStudent->pkgClases/clsUser*pkgClases/clsStudent->pkgClases/clsUser*pkgClases/clsStudent->pkgClases/clsUser*pkgClases/clsStudent->pkgClases/clsUser*pkgClases/clsStudent->pkgClases/clsUser*pkgClases/clsStudent->pkgClases/clsUser*pkgClases/clsStudent->pkgClases/clsUser*pkgClases/clsStudent->pkgClases/clsUser*pkgClases/clsStudent->pkgClases/clsUser*pkgClases/clsStudent->pkgClases/clsUser*pkgClases/clsStudent->pkgClases/clsUser" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="34,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="43,121"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="clsCoordinador" location="360,219" size="138,67" id="pkgClases/clsCoordinador" runTimeClassModel="clsCoordinador(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsCoordinador" id="pkgClases/clsCoordinador#clsCoordinador(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="pkgClases/clsUser&lt;-pkgClases/clsCoordinador" source="//@children.3" target="//@children.0" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="31,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="114,121"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser*pkgClases/clsCoordinador->pkgClases/clsUser" source="//@children.3" target="//@children.0" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="36,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="124,121"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0 //@children.5/@sourceConnections.1 //@children.6/@sourceConnections.0 //@children.6/@sourceConnections.1" name="clsClassroom" location="705,36" size="154,139" id="pkgClases/clsClassroom" runTimeClassModel="ClassroomNumber,ClassroomName,Location,clsClassroom(ILjava.lang.String;ILjava.lang.String;),Capacity">
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="Capacity" id="pkgClases/clsClassroom#Capacity"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ClassroomName" id="pkgClases/clsClassroom#ClassroomName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ClassroomNumber" id="pkgClases/clsClassroom#ClassroomNumber"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="Location" id="pkgClases/clsClassroom#Location"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsClassroom" id="pkgClases/clsClassroom#clsClassroom(ILjava.lang.String;ILjava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="clsTeoricalClassroom" location="570,219" size="176,103" id="pkgClases/clsTeoricalClassroom" runTimeClassModel="Multimedia,AirConditioner,clsTeoricalClassroom(Ljava.lang.String;ILjava.lang.String;IZZ)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="AirConditioner" id="pkgClases/clsTeoricalClassroom#AirConditioner"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="Multimedia" id="pkgClases/clsTeoricalClassroom#Multimedia"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsTeoricalClassroom" id="pkgClases/clsTeoricalClassroom#clsTeoricalClassroom(Ljava.lang.String;ILjava.lang.String;IZZ)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pkgClases/clsClassroom&lt;-pkgClases/clsTeoricalClassroom" source="//@children.5" target="//@children.4" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="155,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="20,139"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom*pkgClases/clsTeoricalClassroom->pkgClases/clsClassroom" source="//@children.5" target="//@children.4" targetEnd="//@children.5/@sourceConnections.1/@children.2" label="//@children.5/@sourceConnections.1/@children.0" sourceEnd="//@children.5/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="135,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,139"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="clsPracticalClassroom" location="795,219" size="227,85" id="pkgClases/clsPracticalClassroom" runTimeClassModel="clsPracticalClassroom(ILjava.lang.String;ILjava.lang.String;),lstEquipment">
+    <children xsi:type="editmodel:CompartmentEditModel" size="204,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="lstEquipment" id="pkgClases/clsPracticalClassroom#lstEquipment"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="136,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsPracticalClassroom" id="pkgClases/clsPracticalClassroom#clsPracticalClassroom(ILjava.lang.String;ILjava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pkgClases/clsClassroom&lt;-pkgClases/clsPracticalClassroom" source="//@children.6" target="//@children.4" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="31,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="121,139"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom*pkgClases/clsPracticalClassroom->pkgClases/clsClassroom" source="//@children.6" target="//@children.4" targetEnd="//@children.6/@sourceConnections.1/@children.2" label="//@children.6/@sourceConnections.1/@children.0" sourceEnd="//@children.6/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="51,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="141,139"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="clsEquipment" location="930,36" size="152,103" id="pkgClases/clsEquipment" runTimeClassModel="clsEquipment(ILjava.lang.String;),Amount,EquipmentName">
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="Amount" id="pkgClases/clsEquipment#Amount"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EquipmentName" id="pkgClases/clsEquipment#EquipmentName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="93,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsEquipment" id="pkgClases/clsEquipment#clsEquipment(ILjava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.9/@sourceConnections.0 //@children.9/@sourceConnections.1 //@children.10/@sourceConnections.0 //@children.10/@sourceConnections.1" name="clsSubject" location="228,390" size="139,103" id="pkgClases/clsSubject" runTimeClassModel="SubjectName,Credits,clsSubject(ILjava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="Credits" location="29,13" id="pkgClases/clsSubject#Credits"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="SubjectName" id="pkgClases/clsSubject#SubjectName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="80,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsSubject" id="pkgClases/clsSubject#clsSubject(ILjava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="clsTheoricalSubject" location="48,510" size="167,85" id="pkgClases/clsTheoricalSubject" runTimeClassModel="Website,clsTheoricalSubject(ILjava.lang.String;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="92,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="Website" id="pkgClases/clsTheoricalSubject#Website"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsTheoricalSubject" id="pkgClases/clsTheoricalSubject#clsTheoricalSubject(ILjava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pkgClases/clsSubject&lt;-pkgClases/clsTheoricalSubject" source="//@children.9" target="//@children.8" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="146,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,97"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject*pkgClases/clsTheoricalSubject->pkgClases/clsSubject" source="//@children.9" target="//@children.8" targetEnd="//@children.9/@sourceConnections.1/@children.2" label="//@children.9/@sourceConnections.1/@children.0" sourceEnd="//@children.9/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="167,15" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,101"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="clsPracticalSubject" location="408,510" size="163,103" id="pkgClases/clsPracticalSubject" runTimeClassModel="clsPracticalSubject(ILjava.lang.String;Ljava.lang.String;Ljava.lang.String;),OperativeSystem,SupportMaterial">
+    <children xsi:type="editmodel:CompartmentEditModel" size="136,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="OperativeSystem" id="pkgClases/clsPracticalSubject#OperativeSystem"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="SupportMaterial" id="pkgClases/clsPracticalSubject#SupportMaterial"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="121,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsPracticalSubject" id="pkgClases/clsPracticalSubject#clsPracticalSubject(ILjava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="pkgClases/clsSubject&lt;-pkgClases/clsPracticalSubject" source="//@children.10" target="//@children.8" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="139,95"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject*pkgClases/clsPracticalSubject->pkgClases/clsSubject" source="//@children.10" target="//@children.8" targetEnd="//@children.10/@sourceConnections.1/@children.2" label="//@children.10/@sourceConnections.1/@children.0" sourceEnd="//@children.10/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,4" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="124,103"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="clsFaculty" location="699,381" size="138,85" id="pkgClases/clsFaculty" runTimeClassModel="clsFaculty(Ljava.lang.String;),FacultyName">
+    <children xsi:type="editmodel:CompartmentEditModel" size="115,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="FacultyName" id="pkgClases/clsFaculty#FacultyName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsFaculty" id="pkgClases/clsFaculty#clsFaculty(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="clsSemester" location="870,381" size="142,85" id="pkgClases/clsSemester" runTimeClassModel="clsSemester(I),SemesterNumber">
+    <children xsi:type="editmodel:CompartmentEditModel" size="119,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="SemesterNumber" id="pkgClases/clsSemester#SemesterNumber"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsSemester" id="pkgClases/clsSemester#clsSemester(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="clsSchedule" location="797,499" size="141,121" id="pkgClases/clsSchedule" runTimeClassModel="endSchedule,StarSchedule,clsSchedule(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),Day">
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="Day" id="pkgClases/clsSchedule#Day"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="StarSchedule" id="pkgClases/clsSchedule#StarSchedule"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="endSchedule" id="pkgClases/clsSchedule#endSchedule"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="89,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clsSchedule" id="pkgClases/clsSchedule#clsSchedule(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=7;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

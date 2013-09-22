@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package pkgClases;
+
+/**
+ * @author Familia
+ *
+ */
+public abstract class clsSubject {
+
+}

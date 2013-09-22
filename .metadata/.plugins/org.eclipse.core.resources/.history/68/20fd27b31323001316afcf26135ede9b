@@ -1,0 +1,63 @@
+package pkgClases;
+
+import String;
+import java.util.ArrayList;
+
+
+public class clsPracticalClassroom extends clsClassroom {
+
+		
+			
+			/**
+			 */
+			public clsPracticalClassroom(int pCapacity, String pClassroomName, int pClassroomNumber, int pLocation){
+			super(pCapacity, pClassroomName, pClassroomNumber, pLocation);
+						  }
+
+	/** 
+	 * @uml.property name="lstEquipment"
+	 */
+	private ArrayList lstEquipment;
+
+	/** 
+	 * Getter of the property <tt>lstEquipment</tt>
+	 * @return  Returns the lstEquipment.
+	 * @uml.property  name="lstEquipment"
+	 */
+	public ArrayList getLstEquipment() {
+		return lstEquipment;
+	}
+
+	/** 
+	 * Setter of the property <tt>lstEquipment</tt>
+	 * @param lstEquipment  The lstEquipment to set.
+	 * @uml.property  name="lstEquipment"
+	 */
+	public void setLstEquipment(ArrayList lstEquipment) {
+		this.lstEquipment = lstEquipment;
+	}
+
+	/**
+	 * @uml.property  name="EquipmentAmount"
+	 */
+	private int equipmentAmount;
+
+	/**
+	 * Getter of the property <tt>EquipmentAmount</tt>
+	 * @return  Returns the equipmentAmount.
+	 * @uml.property  name="EquipmentAmount"
+	 */
+	public int getEquipmentAmount() {
+		return equipmentAmount;
+	}
+
+	/**
+	 * Setter of the property <tt>EquipmentAmount</tt>
+	 * @param EquipmentAmount  The equipmentAmount to set.
+	 * @uml.property  name="EquipmentAmount"
+	 */
+	public void setEquipmentAmount(int equipmentAmount) {
+		this.equipmentAmount = equipmentAmount;
+	}
+
+}

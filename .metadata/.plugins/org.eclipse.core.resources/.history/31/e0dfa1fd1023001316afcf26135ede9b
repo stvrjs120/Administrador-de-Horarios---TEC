@@ -1,0 +1,68 @@
+/**
+ * 
+ */
+package pkgClases;
+
+import String;
+
+/** 
+ * @author Familia
+ */
+public class clsTeoricalClassroom extends clsClassroom {
+
+		
+			
+			
+				
+				/**
+				 */
+				public clsTeoricalClassroom(String pClassroomName, int pClassroomNumber, String pLocation, int pCapacity, boolean pAirConditioner, boolean pMultimedia){
+						super(pCapacity, pClassroomName, pClassroomNumber, pLocation); }
+
+	/**
+	 * @uml.property  name="AirConditioner"
+	 */
+	private boolean airConditioner = false;
+
+	/**
+	 * Getter of the property <tt>AirConditioner</tt>
+	 * @return  Returns the airConditioner.
+	 * @uml.property  name="AirConditioner"
+	 */
+	public boolean isAirConditioner() {
+		return airConditioner;
+	}
+
+	/**
+	 * Setter of the property <tt>AirConditioner</tt>
+	 * @param AirConditioner  The airConditioner to set.
+	 * @uml.property  name="AirConditioner"
+	 */
+	public void setAirConditioner(boolean airConditioner) {
+		this.airConditioner = airConditioner;
+	}
+
+	/**
+	 * @uml.property  name="Multimedia"
+	 */
+	private boolean multimedia = false;
+
+	/**
+	 * Getter of the property <tt>Multimedia</tt>
+	 * @return  Returns the multimedia.
+	 * @uml.property  name="Multimedia"
+	 */
+	public boolean isMultimedia() {
+		return multimedia;
+	}
+
+	/**
+	 * Setter of the property <tt>Multimedia</tt>
+	 * @param Multimedia  The multimedia to set.
+	 * @uml.property  name="Multimedia"
+	 */
+	public void setMultimedia(boolean multimedia) {
+		this.multimedia = multimedia;
+	}
+
+}

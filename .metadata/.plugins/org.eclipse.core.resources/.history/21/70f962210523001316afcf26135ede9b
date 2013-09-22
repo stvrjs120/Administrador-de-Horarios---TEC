@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package pkgClases;
+
+/** 
+ * @author Familia
+ */
+public class clsTeacher extends clsUser {
+
+		
+		/**
+		 */
+		public clsTeacher(String pid, String pName, String pPassword){
+		
+				super(pid, pName, pPassword);
+				
+			 }
+
+}

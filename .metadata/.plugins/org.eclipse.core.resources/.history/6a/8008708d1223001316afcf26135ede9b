@@ -1,0 +1,10 @@
+package pkgClases;
+
+
+public class clsPracticalClassroom {
+
+	public clsPracticalClassroom() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

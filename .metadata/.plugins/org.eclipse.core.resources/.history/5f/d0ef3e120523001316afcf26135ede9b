@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package pkgClases;
+
+/** 
+ * @author Familia
+ */
+public class clsTeacher extends clsUser {
+
+	/**
+	 * 
+	 */
+	public clsTeacher() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

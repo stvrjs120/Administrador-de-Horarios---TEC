@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package pkgClases;
+
+/** 
+ * @author Familia
+ */
+public class TheoricalSubject {
+
+	/**
+	 * 
+	 */
+	public TheoricalSubject() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

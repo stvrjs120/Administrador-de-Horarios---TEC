@@ -1,0 +1,13 @@
+package pkgClases;
+
+
+public class clsCoordinador extends clsUser {
+
+		
+		/**
+		 */
+		public clsCoordinador(String pid, String pName, String pPassword){
+			super(pID, pName, pPassword);
+		}
+
+}

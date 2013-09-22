@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package pkgClases;
+
+/** 
+ * @author Familia
+ */
+public abstract class clsClassroom {
+
+	/**
+	 * @uml.property  name="ClassroomName"
+	 */
+	private String classroomName;
+
+	/**
+	 * Getter of the property <tt>ClassroomName</tt>
+	 * @return  Returns the classroomName.
+	 * @uml.property  name="ClassroomName"
+	 */
+	public String getClassroomName() {
+		return classroomName;
+	}
+
+	/**
+	 * Setter of the property <tt>ClassroomName</tt>
+	 * @param ClassroomName  The classroomName to set.
+	 * @uml.property  name="ClassroomName"
+	 */
+	public void setClassroomName(String classroomName) {
+		this.classroomName = classroomName;
+	}
+
+}
