@@ -17,7 +17,7 @@ public class clsSemester {
      *
      * @uml.property name="SemesterNumber"
      */
-    private int semesterNumber;
+    private String semesterNumber;
 
     /**
      * Getter of the property <tt>SemesterNumber</tt>
@@ -25,7 +25,7 @@ public class clsSemester {
      * @return Returns the semesterNumber.
      * @uml.property name="SemesterNumber"
      */
-    public int getSemesterNumber() {
+    public String getSemesterNumber() {
         return semesterNumber;
     }
 
@@ -35,8 +35,34 @@ public class clsSemester {
      * @param SemesterNumber The semesterNumber to set.
      * @uml.property name="SemesterNumber"
      */
-    public void setSemesterNumber(int semesterNumber) {
+    public void setSemesterNumber(String semesterNumber) {
         this.semesterNumber = semesterNumber;
+    }
+    /**
+     * Semester's year
+     *
+     * @uml.property name="semesterYear"
+     */
+    private String semesterYear;
+
+    /**
+     * Getter of the property <tt>semesterYear</tt>
+     *
+     * @return Returns the semesterYear.
+     * @uml.property name="semesterYear"
+     */
+    public String getSemesterYear() {
+        return semesterYear;
+    }
+
+    /**
+     * Setter of the property <tt>semesterYear</tt>
+     *
+     * @param semesterYear The semesterYear to set.
+     * @uml.property name="semesterYear"
+     */
+    public void setSemesterYear(String semesterYear) {
+        this.semesterYear = semesterYear;
     }
     /**
      * @uml.property name="lstSubject"
@@ -44,7 +70,7 @@ public class clsSemester {
      * inverse="clsSemester:pkgClases.clsSubject"
      * @uml.association name="contains"
      */
-    private ArrayList<clsSubject> lstSubject;
+    private static ArrayList<clsSubject> lstSubject;
 
     /**
      * Getter of the property <tt>lstSubject</tt>
@@ -71,7 +97,8 @@ public class clsSemester {
      *
      * @param pSemesterNumber
      */
-    public clsSemester(int pSemesterNumber) {
+    public clsSemester(String pSemesterNumber, String pSemesterYear) {
         semesterNumber = pSemesterNumber;
+        semesterYear = pSemesterYear;
     }
 }

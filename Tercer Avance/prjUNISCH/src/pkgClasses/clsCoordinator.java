@@ -10,12 +10,12 @@ import java.util.ArrayList;
  * @version 1.0 (current version number of program)
  * @since 2013-09-21 (the version of the package this class was first added to)
  */
-public class clsCoordinador extends clsUser {
+public class clsCoordinator extends clsUser {
 
     /**
      * @uml.property name="lstSemester"
      * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
-     * inverse="clsCoordinador:pkgClasses.clsSemester"
+     * inverse="clsCoordinator:pkgClasses.clsSemester"
      * @uml.association name="creates"
      */
     private ArrayList<clsSemester> lstSemester;
@@ -47,7 +47,7 @@ public class clsCoordinador extends clsUser {
      * @param pName
      * @param pPassword
      */
-    public clsCoordinador(String pID, String pName, String pPassword) {
+    public clsCoordinator(String pID, String pName, String pPassword) {
         super(pID, pName, pPassword);
     }
 }

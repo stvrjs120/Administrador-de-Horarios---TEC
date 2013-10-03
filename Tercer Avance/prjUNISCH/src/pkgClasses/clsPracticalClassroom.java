@@ -18,7 +18,7 @@ public class clsPracticalClassroom extends clsClassroom {
      * inverse="clsPracticalClassroom:pkgClases.clsEquipment"
      * @uml.association name="has"
      */
-    private ArrayList<clsEquipment> lstEquipment;
+    private static ArrayList<clsEquipment> lstEquipment;
 
     /**
      * Getter of the property <tt>lstEquipment</tt>
@@ -28,18 +28,6 @@ public class clsPracticalClassroom extends clsClassroom {
      */
     public ArrayList<clsEquipment> getLstEquipment() {
         return lstEquipment;
-    }
-
-    /**
-     * Returns the element at the specified position in this list.
-     *
-     * @param index index of element to return.
-     * @return the element at the specified position in this list.
-     * @see java.util.List#get(int)
-     * @uml.property name="lstEquipment"
-     */
-    public clsEquipment getLstEquipment(int i) {
-        return (clsEquipment) lstEquipment.get(i);
     }
 
     /**

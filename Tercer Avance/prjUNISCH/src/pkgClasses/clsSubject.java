@@ -88,31 +88,64 @@ public abstract class clsSubject {
     public void setWeeklyWorkTime(int weeklyWorkTime) {
         this.weeklyWorkTime = weeklyWorkTime;
     }
+    
     /**
-     * Subject's school
+     * Subject's schedule
      *
-     * @uml.property name="School"
+     * @uml.property name="Schedule"
+     * @uml.associationEnd multiplicity="(1 1)"
+     * inverse="clsSubject:pkgClases.clsSchedule"
+     * @uml.association name="has"
      */
-    private String school = "Computer Engineering";
+    private static clsSchedule schedule = null;
 
     /**
-     * Getter of the property <tt>School</tt>
+     * Getter of the property <tt>Schedule</tt>
      *
-     * @return Returns the school.
-     * @uml.property name="School"
+     * @return Returns the schedule.
+     * @uml.property name="Schedule"
      */
-    public String getSchool() {
-        return school;
+    public clsSchedule getSchedule() {
+        return schedule;
     }
 
     /**
-     * Setter of the property <tt>School</tt>
+     * Setter of the property <tt>Schedule</tt>
      *
-     * @param School The school to set.
-     * @uml.property name="School"
+     * @param Schedule The schedule to set.
+     * @uml.property name="Schedule"
      */
-    public void setSchool(String school) {
-        this.school = school;
+    public void setSchedule(clsSchedule schedule) {
+        this.schedule = schedule;
+    }
+    /**
+     * Subject's classroom
+     *
+     * @uml.property name="clsClassroom"
+     * @uml.associationEnd multiplicity="(1 1)"
+     * inverse="clsSubject:pkgClasses.clsClassroom"
+     * @uml.association name="in"
+     */
+    private static clsClassroom classroom = null;
+
+    /**
+     * Getter of the property <tt>clsClassroom</tt>
+     *
+     * @return Returns the clsClassroom.
+     * @uml.property name="clsClassroom"
+     */
+    public clsClassroom getClsClassroom() {
+        return classroom;
+    }
+
+    /**
+     * Setter of the property <tt>clsClassroom</tt>
+     *
+     * @param clsClassroom The clsClassroom to set.
+     * @uml.property name="clsClassroom"
+     */
+    public void setClsClassroom(clsClassroom clsClassroom) {
+        this.classroom = clsClassroom;
     }
 
     /**
