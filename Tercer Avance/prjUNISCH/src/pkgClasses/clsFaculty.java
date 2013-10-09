@@ -45,7 +45,7 @@ public class clsFaculty {
      * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
      * inverse="Faculty:pkgClases.clsSubject"
      */
-    private ArrayList<clsFaculty> lstSubject;
+    private ArrayList<clsSubject> lstSubject;
 
     /**
      * Getter of the property <tt>lstSubject</tt>
@@ -53,7 +53,7 @@ public class clsFaculty {
      * @return Returns the lstSubject.
      * @uml.property name="lstSubject"
      */
-    public ArrayList<clsFaculty> getLstSubject() {
+    public ArrayList<clsSubject> getLstSubject() {
         return lstSubject;
     }
 
@@ -63,7 +63,7 @@ public class clsFaculty {
      * @param lstSubject the lstSubject to set.
      * @uml.property name="lstSubject"
      */
-    public void setLstSubject(ArrayList<clsFaculty> lstSubject) {
+    public void setLstSubject(ArrayList<clsSubject> lstSubject) {
         this.lstSubject = lstSubject;
     }
     /**

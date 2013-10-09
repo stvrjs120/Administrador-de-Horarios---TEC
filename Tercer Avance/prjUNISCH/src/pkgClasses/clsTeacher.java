@@ -65,6 +65,33 @@ public class clsTeacher extends clsUser {
     public void setLstSemester(ArrayList<clsSemester> lstSemester) {
         this.lstSemester = lstSemester;
     }
+    /**
+     * @uml.property name="clsSchedule"
+     * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
+     * inverse="clsTeacher:pkgClases.clsSchedule"
+     * @uml.association name="has"
+     */
+    private ArrayList<clsSchedule> lstSchedule;
+
+    /**
+     * Getter of the property <tt>clsSchedule</tt>
+     *
+     * @return Returns the clsSchedule.
+     * @uml.property name="clsSchedule"
+     */
+    public ArrayList<clsSchedule> getLstSchedule() {
+        return lstSchedule;
+    }
+
+    /**
+     * Setter of the property <tt>clsSchedule</tt>
+     *
+     * @param clsSchedule the clsSchedule to set.
+     * @uml.property name="clsSchedule"
+     */
+    public void setLstSchedule(ArrayList<clsSchedule> lstSchedule) {
+        this.lstSchedule = lstSchedule;
+    }
 
     /**
      * Teacher class constructor

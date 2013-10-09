@@ -188,4 +188,28 @@ public class clsMetodes {
         clsTeacher tempTeacher = new clsTeacher(pid, pName, pPassword, pSchedule);
         lstUsers.add(tempTeacher);
     }
+    
+    public void insertSubjects(String pFaculty, ArrayList<clsSubject> pLstSubject) {
+        for (clsFaculty tempFaculty : lstFaculty) {
+            if(tempFaculty.getFacultyName().equals(pFaculty)) {
+                tempFaculty.setLstSubject(pLstSubject);
+                break;
+            }
+        }
+    }
+    
+    public void insertScheduleSubject(String pSubjectName, String pDay, String pStartSchedule, String pEndSchedule) {
+        for (clsFaculty tempFaculty : lstFaculty) {
+            for (clsSubject tempSubject : tempFaculty.getLstSubject()) {
+                if(tempSubject.getSubjectName().equals(pSubjectName))
+                    tempSubject.setSchedule(new clsSchedule(pDay, pStartSchedule, pEndSchedule));
+            }
+        }
+    }
+    
+    public void insertScheduleTeacher(String pID, clsSchedule pSchedule) {
+        for (clsUser tempUser : lstUsers) {
+            ;
+        }
+    }
 }
