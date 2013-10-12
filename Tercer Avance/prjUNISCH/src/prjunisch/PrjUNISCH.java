@@ -36,7 +36,50 @@ public class PrjUNISCH {
         //
         //Teachers insertions
         //
-        myMetodes.insertTeacher("eballestero", "", null, null);
+        myMetodes.insertTeacher("eballestero", "Esteban Ballestero", "eballes");
+        ArrayList<clsSchedule> tempSchedule = new ArrayList<>();
+        tempSchedule.add(new clsSchedule("Lunes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Martes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Miercoles", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Jueves", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Viernes", "7:00am", "4:00pm"));
+        myMetodes.insertScheduleTeacher("eballestero", tempSchedule);
+        
+        myMetodes.insertTeacher("olopez", "Oscar Lopez", "olop");
+        tempSchedule.clear();
+        tempSchedule.add(new clsSchedule("Lunes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Martes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Miercoles", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Jueves", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Viernes", "7:00am", "4:00pm"));
+        myMetodes.insertScheduleTeacher("olopez", tempSchedule);
+        
+        myMetodes.insertTeacher("lvalerio", "Lonera Valerio", "ovale");
+        tempSchedule.clear();
+        tempSchedule.add(new clsSchedule("Lunes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Martes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Miercoles", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Jueves", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Viernes", "7:00am", "4:00pm"));
+        myMetodes.insertScheduleTeacher("lvalerio", tempSchedule);
+        
+        myMetodes.insertTeacher("mcampos", "Marvin Campos", "mcamp");
+        tempSchedule.clear();
+        tempSchedule.add(new clsSchedule("Lunes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Martes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Miercoles", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Jueves", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Viernes", "7:00am", "4:00pm"));
+        myMetodes.insertScheduleTeacher("mcampos", tempSchedule);
+        
+        myMetodes.insertTeacher("jrojas", "Jiddu Rojas", "jroj");
+        tempSchedule.clear();
+        tempSchedule.add(new clsSchedule("Lunes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Martes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Miercoles", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Jueves", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Viernes", "7:00am", "4:00pm"));
+        myMetodes.insertScheduleTeacher("jrojas", tempSchedule);
         
         //
         //Semesters insertions
@@ -89,6 +132,9 @@ public class PrjUNISCH {
         lstSubject.add(new clsPracticalSubject(4, "Estructuras de Datos", "Windows", "Presentaciones"));
         myMetodes.insertSubjects("Computer Engineering", lstSubject);
         
+        //
+        //Subject-classroom insertions
+        //
         
     }
 }

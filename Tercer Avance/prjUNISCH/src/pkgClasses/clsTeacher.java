@@ -13,32 +13,6 @@ import java.util.ArrayList;
 public class clsTeacher extends clsUser {
 
     /**
-     * Teacher's schedule
-     *
-     * @uml.property name="Schedule"
-     */
-    private String schedule;
-
-    /**
-     * Getter of the property <tt>Schedule</tt>
-     *
-     * @return Returns the schedule.
-     * @uml.property name="Schedule"
-     */
-    public String getSchedule() {
-        return schedule;
-    }
-
-    /**
-     * Setter of the property <tt>Schedule</tt>
-     *
-     * @param Schedule The schedule to set.
-     * @uml.property name="Schedule"
-     */
-    public void setSchedule(String schedule) {
-        this.schedule = schedule;
-    }
-    /**
      * @uml.property name="lstSemester"
      * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
      * inverse="clsTeacher:java.util.ArrayList"
@@ -65,6 +39,7 @@ public class clsTeacher extends clsUser {
     public void setLstSemester(ArrayList<clsSemester> lstSemester) {
         this.lstSemester = lstSemester;
     }
+    
     /**
      * @uml.property name="clsSchedule"
      * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
@@ -92,7 +67,35 @@ public class clsTeacher extends clsUser {
     public void setLstSchedule(ArrayList<clsSchedule> lstSchedule) {
         this.lstSchedule = lstSchedule;
     }
+    
+    /**
+     * @uml.property name="lstSemester"
+     * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
+     * inverse="clsTeacher:pkgClases.clsSubject"
+     * @uml.association name="teaches"
+     */
+    private ArrayList<clsSubject> lstSubject;
 
+    /**
+     * Getter of the property <tt>lstSemester</tt>
+     *
+     * @return Returns the lstSemester.
+     * @uml.property name="lstSemester"
+     */
+    public ArrayList<clsSubject> getLstSubject() {
+        return lstSubject;
+    }
+
+    /**
+     * Setter of the property <tt>lstSemester</tt>
+     *
+     * @param lstSubject the lstSemester to set.
+     * @uml.property name="lstSemester"
+     */
+    public void setLstSubject(ArrayList<clsSubject> lstSubject) {
+        this.lstSubject = lstSubject;
+    }
+    
     /**
      * Teacher class constructor
      *
@@ -101,8 +104,7 @@ public class clsTeacher extends clsUser {
      * @param pPassword
      * @param pSchedule
      */
-    public clsTeacher(String pID, String pName, String pPassword, String pSchedule) {
+    public clsTeacher(String pID, String pName, String pPassword) {
         super(pID, pName, pPassword);
-        schedule = pSchedule;
     }
 }

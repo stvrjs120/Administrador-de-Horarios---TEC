@@ -184,8 +184,8 @@ public class clsMetodes {
         lstUsers.add(tempCoordinator);
     }
     
-    public void insertTeacher(String pid, String pName, String pPassword, String pSchedule) {
-        clsTeacher tempTeacher = new clsTeacher(pid, pName, pPassword, pSchedule);
+    public void insertTeacher(String pid, String pName, String pPassword) {
+        clsTeacher tempTeacher = new clsTeacher(pid, pName, pPassword);
         lstUsers.add(tempTeacher);
     }
     
@@ -207,9 +207,29 @@ public class clsMetodes {
         }
     }
     
-    public void insertScheduleTeacher(String pID, clsSchedule pSchedule) {
+    public void insertScheduleTeacher(String pID, ArrayList<clsSchedule> pSchedule) {
         for (clsUser tempUser : lstUsers) {
-            ;
+            if (tempUser.getClass() == clsTeacher.class) {
+                clsTeacher tempTeacher = (clsTeacher) tempUser;
+                if(tempTeacher.getID().equals(pID)) {
+                    tempTeacher.setLstSchedule(pSchedule);
+                    break;
+                }
+            }
         }
     }
+    
+    public boolean insertSubjectClassroom(String pSubjectName, String pClassroomName) {
+        for (clsFaculty tempFaculty : lstFaculty)
+            for (clsSubject tempSubject : tempFaculty.getLstSubject())
+                if(tempSubject.getSubjectName().equals(pSubjectName))
+                    for (clsClassroom tempClassroom : lstClassroom)
+                        if(tempClassroom.getClassroomName().equals(pClassroomName)) {
+                            tempSubject.setClsClassroom(tempClassroom);
+                            return true;
+                        }
+        return false;
+    }
+    
+    
 }
