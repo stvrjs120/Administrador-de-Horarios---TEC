@@ -6,7 +6,7 @@ package prjunisch;
 
 import java.util.ArrayList;
 import pkgClasses.*;
-import pkgMetodes.clsMetodes;
+import pkgMetods.clsMetods;
 
 /**
  *
@@ -14,14 +14,18 @@ import pkgMetodes.clsMetodes;
  */
 public class PrjUNISCH {
     
-    public static clsMetodes myMetodes = new clsMetodes();
+    public static clsMetods myMetodes = new clsMetods();
     
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
+        inserts();
+    }
+    
+    public static void inserts() {
+        
         //
         //Coordinators insertions
         //
@@ -96,20 +100,20 @@ public class PrjUNISCH {
         //
         //Classrooms insertions
         //
-        ArrayList<clsEquipment> tempEquipment = new ArrayList<>();
-        tempEquipment.add(new clsEquipment(25, "Computadoras"));
-        tempEquipment.add(new clsEquipment(1, "Proyector"));
-        myMetodes.insertClassroom(24, "Laboratorio", 1, "Atrás del comedor", tempEquipment);
+        ArrayList<clsEquipment> tempEquipment1 = new ArrayList<>();
+        tempEquipment1.add(new clsEquipment(22, "Computadoras"));
+        tempEquipment1.add(new clsEquipment(1, "Proyector"));
+        myMetodes.insertClassroom(22, "LaboratorioN1", 1, "Atrás del comedor", tempEquipment1);
         
-        tempEquipment.clear();
-        tempEquipment.add(new clsEquipment(25, "Computadoras"));
-        tempEquipment.add(new clsEquipment(1, "Proyector"));
-        myMetodes.insertClassroom(24, "Laboratorio", 2, "Atrás del comedor", tempEquipment);
+        ArrayList<clsEquipment> tempEquipment2 = new ArrayList<>();
+        tempEquipment2.add(new clsEquipment(25, "Computadoras"));
+        tempEquipment2.add(new clsEquipment(1, "Proyector"));
+        myMetodes.insertClassroom(25, "LaboratorioN2", 2, "Atrás del comedor", tempEquipment2);
         
-        tempEquipment.clear();
-        tempEquipment.add(new clsEquipment(25, "Computadoras"));
-        tempEquipment.add(new clsEquipment(1, "Proyector"));
-        myMetodes.insertClassroom(24, "Laboratorio MAC", 3, "A la par de las oficinas de la carrera de computación", tempEquipment);
+        ArrayList<clsEquipment> tempEquipment3 = new ArrayList<>();
+        tempEquipment3.add(new clsEquipment(23, "Computadoras"));
+        tempEquipment3.add(new clsEquipment(1, "Proyector"));
+        myMetodes.insertClassroom(23, "Laboratorio MAC", 3, "A la par de las oficinas de la carrera de computación", tempEquipment3);
         
         myMetodes.insertClassroom("Pecera", 1, "Primer piso", 24, true, true);
         myMetodes.insertClassroom("Aula de inglés", 2, "Segundo piso", 27, true, true);
@@ -118,23 +122,46 @@ public class PrjUNISCH {
         //
         //Subjects insertions
         //
-        ArrayList<clsSubject> lstSubject = new ArrayList<>();
-        lstSubject.add(new clsTheoricalSubject(4, "Calculo", "www.calculo.com"));
-        lstSubject.add(new clsTheoricalSubject(2, "Filosoficos", "www.filosofia.com"));
-        lstSubject.add(new clsTheoricalSubject(4, "Probabilidades", "www.probabilidades.com"));
-        lstSubject.add(new clsTheoricalSubject(2, "Investigación de Operaciones", "www.io.com"));
-        myMetodes.insertSubjects("Letters & Science", lstSubject);
+        ArrayList<clsSubject> lstSubject1 = new ArrayList<>();
+        lstSubject1.add(new clsTheoricalSubject(4, "Calculo", "www.calculo.com"));
+        lstSubject1.add(new clsTheoricalSubject(2, "Filosoficos", "www.filosofia.com"));
+        lstSubject1.add(new clsTheoricalSubject(4, "Probabilidades", "www.probabilidades.com"));
+        lstSubject1.add(new clsTheoricalSubject(2, "Investigación de Operaciones", "www.io.com"));
+        myMetodes.insertSubjects("Letters & Science", lstSubject1);
         
-        lstSubject.clear();
-        lstSubject.add(new clsPracticalSubject(4, "Sistemas Operativos", "Linux", "Presentaciones"));
-        lstSubject.add(new clsPracticalSubject(4, "Diseño de software", "Windows", "Presentaciones"));
-        lstSubject.add(new clsPracticalSubject(4, "Diseño de Interfaces", "iOS", "Encuestas"));
-        lstSubject.add(new clsPracticalSubject(4, "Estructuras de Datos", "Windows", "Presentaciones"));
-        myMetodes.insertSubjects("Computer Engineering", lstSubject);
+        ArrayList<clsSubject> lstSubject2 = new ArrayList<>();
+        lstSubject2.add(new clsPracticalSubject(4, "Sistemas Operativos", "Linux", "Presentaciones"));
+        lstSubject2.add(new clsPracticalSubject(4, "Diseño de software", "Windows", "Presentaciones"));
+        lstSubject2.add(new clsPracticalSubject(4, "Diseño de Interfaces", "iOS", "Encuestas"));
+        lstSubject2.add(new clsPracticalSubject(4, "Estructuras de Datos", "Windows", "Presentaciones"));
+        myMetodes.insertSubjects("Computer Engineering", lstSubject2);
         
         //
-        //Subject-classroom insertions
+        //Semester-Subject insertions
         //
+        myMetodes.insertSemesterSubject("I", "2013", "Calculo");
+        myMetodes.insertSemesterSubject("II", "2013", "Filosoficos");
+        myMetodes.insertSemesterSubject("I", "2013", "Probabilidades");
+        myMetodes.insertSemesterSubject("II", "2013", "Investigación de Operaciones");
+        myMetodes.insertSemesterSubject("I", "2013", "Sistemas Operativos");
+        myMetodes.insertSemesterSubject("II", "2013", "Diseño de software");
+        myMetodes.insertSemesterSubject("I", "2013", "Diseño de interfaces");
+        myMetodes.insertSemesterSubject("II", "2013", "Estructura de Datos");
         
+        //
+        //Subject-Classroom insertions
+        //
+        myMetodes.insertSubjectClassroom("I", "2013", "Calculo", "Aula grande");
+        myMetodes.insertSubjectClassroom("II", "2013", "Filosoficos", "Pecera");
+        myMetodes.insertSubjectClassroom("I", "2013", "Probabilidades", "Aula grande");
+        myMetodes.insertSubjectClassroom("II", "2013", "Investigación de Operaciones", "Pecera");
+        myMetodes.insertSubjectClassroom("I", "2013", "Sistemas Operativos", "LaboratorioN2");
+        myMetodes.insertSubjectClassroom("II", "2013", "Diseño de software", "LaboratorioN1");
+        myMetodes.insertSubjectClassroom("I", "2013", "Diseño de interfaces", "Laboratorio MAC");
+        myMetodes.insertSubjectClassroom("II", "2013", "Estructura de Datos", "LaboratorioN1");
+        
+        //
+        //Subject
+        //
     }
 }

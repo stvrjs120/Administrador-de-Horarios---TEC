@@ -97,7 +97,7 @@ public abstract class clsSubject {
      * inverse="clsSubject:pkgClases.clsSchedule"
      * @uml.association name="has"
      */
-    private static clsSchedule schedule;
+    private clsSchedule schedule;
 
     /**
      * Getter of the property <tt>Schedule</tt>
@@ -126,7 +126,7 @@ public abstract class clsSubject {
      * inverse="clsSubject:pkgClasses.clsClassroom"
      * @uml.association name="in"
      */
-    private static clsClassroom classroom;
+    private clsClassroom classroom;
 
     /**
      * Getter of the property <tt>clsClassroom</tt>

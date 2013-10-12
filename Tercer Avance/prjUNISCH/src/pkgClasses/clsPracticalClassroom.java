@@ -18,7 +18,7 @@ public class clsPracticalClassroom extends clsClassroom {
      * inverse="clsPracticalClassroom:pkgClases.clsEquipment"
      * @uml.association name="has"
      */
-    private static ArrayList<clsEquipment> lstEquipment;
+    private ArrayList<clsEquipment> lstEquipment = null;
 
     /**
      * Getter of the property <tt>lstEquipment</tt>

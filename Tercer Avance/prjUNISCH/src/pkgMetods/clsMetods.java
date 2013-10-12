@@ -1,7 +1,7 @@
 /**
  *
  */
-package pkgMetodes;
+package pkgMetods;
 
 import java.util.ArrayList;
 
@@ -10,15 +10,15 @@ import pkgClasses.*;
 /**
  * @author StvRjs.K12
  */
-public class clsMetodes {
+public class clsMetods {
 
     /**
      * @uml.property name="lstSemester"
      * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
-     * inverse="clsMetodes:pkgClasses.clsSemester"
+     * inverse="clsMetods:pkgClasses.clsSemester"
      * @uml.association name="contains"
      */
-    private static ArrayList<clsSemester> lstSemester = new ArrayList<>();
+    private ArrayList<clsSemester> lstSemester = new ArrayList<>();
 
     /**
      * Getter of the property <tt>lstSemester</tt>
@@ -42,10 +42,10 @@ public class clsMetodes {
     /**
      * @uml.property name="lstClassroom"
      * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
-     * inverse="clsMetodes:pkgClasses.clsClassroom"
+     * inverse="clsMetods:pkgClasses.clsClassroom"
      * @uml.association name="contains"
      */
-    private static ArrayList<clsClassroom> lstClassroom = new ArrayList<>();
+    private ArrayList<clsClassroom> lstClassroom = new ArrayList<>();
 
     /**
      * Returns the element at the specified position in this list.
@@ -71,10 +71,10 @@ public class clsMetodes {
     /**
      * @uml.property name="lstFaculty"
      * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
-     * inverse="clsMetodes:pkgClases.clsFaculty"
+     * inverse="clsMetods:pkgClases.clsFaculty"
      * @uml.association name="contains"
      */
-    private static ArrayList<clsFaculty> lstFaculty = new ArrayList<>();
+    private ArrayList<clsFaculty> lstFaculty = new ArrayList<>();
 
     /**
      * Getter of the property <tt>lstFaculty</tt>
@@ -98,7 +98,7 @@ public class clsMetodes {
     /**
      * @uml.property name="lstUsers"
      * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
-     * inverse="clsMetodes:pkgClases.clsUser"
+     * inverse="clsMetods:pkgClases.clsUser"
      */
     private ArrayList<clsUser> lstUsers = new ArrayList<>();
 
@@ -123,9 +123,9 @@ public class clsMetodes {
     }
 
     /**
-     * clsMetodes class constructor
+     * clsMetods class constructor
      */
-    public clsMetodes() {
+    public clsMetods() {
     }
 
     /**
@@ -190,25 +190,22 @@ public class clsMetodes {
     }
     
     public void insertSubjects(String pFaculty, ArrayList<clsSubject> pLstSubject) {
-        for (clsFaculty tempFaculty : lstFaculty) {
+        for (clsFaculty tempFaculty : lstFaculty)
             if(tempFaculty.getFacultyName().equals(pFaculty)) {
                 tempFaculty.setLstSubject(pLstSubject);
                 break;
             }
-        }
     }
     
     public void insertScheduleSubject(String pSubjectName, String pDay, String pStartSchedule, String pEndSchedule) {
-        for (clsFaculty tempFaculty : lstFaculty) {
-            for (clsSubject tempSubject : tempFaculty.getLstSubject()) {
+        for (clsFaculty tempFaculty : lstFaculty)
+            for (clsSubject tempSubject : tempFaculty.getLstSubject())
                 if(tempSubject.getSubjectName().equals(pSubjectName))
                     tempSubject.setSchedule(new clsSchedule(pDay, pStartSchedule, pEndSchedule));
-            }
-        }
     }
     
     public void insertScheduleTeacher(String pID, ArrayList<clsSchedule> pSchedule) {
-        for (clsUser tempUser : lstUsers) {
+        for (clsUser tempUser : lstUsers)
             if (tempUser.getClass() == clsTeacher.class) {
                 clsTeacher tempTeacher = (clsTeacher) tempUser;
                 if(tempTeacher.getID().equals(pID)) {
@@ -216,18 +213,31 @@ public class clsMetodes {
                     break;
                 }
             }
-        }
     }
     
-    public boolean insertSubjectClassroom(String pSubjectName, String pClassroomName) {
-        for (clsFaculty tempFaculty : lstFaculty)
-            for (clsSubject tempSubject : tempFaculty.getLstSubject())
-                if(tempSubject.getSubjectName().equals(pSubjectName))
-                    for (clsClassroom tempClassroom : lstClassroom)
-                        if(tempClassroom.getClassroomName().equals(pClassroomName)) {
-                            tempSubject.setClsClassroom(tempClassroom);
-                            return true;
+    public void insertSemesterSubject(String pSemesterNumber, String pSemesterYear, String pSubjectName) {
+        for (clsSemester tempSemester : lstSemester)
+            if(tempSemester.getSemesterYear().equals(pSemesterYear) && tempSemester.getSemesterNumber().equals(pSemesterNumber))
+                for (clsFaculty tempFaculty : lstFaculty)
+                    for (clsSubject tempSubject : tempFaculty.getLstSubject())
+                        if(tempSubject.getSubjectName().equals(pSubjectName)) {
+                            ArrayList<clsSubject> tempLstSubject = tempSemester.getLstSubject();
+                            tempLstSubject.add(tempSubject);
+                            break;
                         }
+    }
+    
+    public boolean insertSubjectClassroom(String pSemesterNumber, String pSemesterYear, String pSubjectName, String pClassroomName) {
+        for (clsSemester tempSemester : lstSemester)
+            if(tempSemester.getSemesterYear().equals(pSemesterYear) && tempSemester.getSemesterNumber().equals(pSemesterNumber))
+                for (clsFaculty tempFaculty : lstFaculty)
+                    for (clsSubject tempSubject : tempFaculty.getLstSubject())
+                        if(tempSubject.getSubjectName().equals(pSubjectName))
+                            for (clsClassroom tempClassroom : lstClassroom)
+                                if(tempClassroom.getClassroomName().equals(pClassroomName)) {
+                                    tempSubject.setClsClassroom(tempClassroom);
+                                    return true;
+                                }
         return false;
     }
     

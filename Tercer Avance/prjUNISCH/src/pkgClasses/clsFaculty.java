@@ -45,7 +45,7 @@ public class clsFaculty {
      * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
      * inverse="Faculty:pkgClases.clsSubject"
      */
-    private ArrayList<clsSubject> lstSubject;
+    private ArrayList<clsSubject> lstSubject = null;
 
     /**
      * Getter of the property <tt>lstSubject</tt>

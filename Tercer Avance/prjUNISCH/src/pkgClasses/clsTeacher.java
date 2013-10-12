@@ -12,40 +12,6 @@ import java.util.ArrayList;
  */
 public class clsTeacher extends clsUser {
 
-    /**
-     * @uml.property name="lstSemester"
-     * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
-     * inverse="clsTeacher:java.util.ArrayList"
-     * @uml.association name="works_by"
-     */
-    private ArrayList<clsSemester> lstSemester;
-
-    /**
-     * Getter of the property <tt>lstSemester</tt>
-     *
-     * @return Returns the lstSemester.
-     * @uml.property name="lstSemester"
-     */
-    public ArrayList<clsSemester> getLstSemester() {
-        return lstSemester;
-    }
-
-    /**
-     * Setter of the property <tt>lstSemester</tt>
-     *
-     * @param lstSemester the lstSemester to set.
-     * @uml.property name="lstSemester"
-     */
-    public void setLstSemester(ArrayList<clsSemester> lstSemester) {
-        this.lstSemester = lstSemester;
-    }
-    
-    /**
-     * @uml.property name="clsSchedule"
-     * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
-     * inverse="clsTeacher:pkgClases.clsSchedule"
-     * @uml.association name="has"
-     */
     private ArrayList<clsSchedule> lstSchedule;
 
     /**

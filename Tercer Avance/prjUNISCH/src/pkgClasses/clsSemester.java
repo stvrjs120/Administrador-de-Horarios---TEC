@@ -70,7 +70,7 @@ public class clsSemester {
      * inverse="clsSemester:pkgClases.clsSubject"
      * @uml.association name="contains"
      */
-    private static ArrayList<clsSubject> lstSubject;
+    private ArrayList<clsSubject> lstSubject = null;
 
     /**
      * Getter of the property <tt>lstSubject</tt>
@@ -98,6 +98,7 @@ public class clsSemester {
      * @param pSemesterNumber
      */
     public clsSemester(String pSemesterNumber, String pSemesterYear) {
+        lstSubject = new ArrayList<>();
         semesterNumber = pSemesterNumber;
         semesterYear = pSemesterYear;
     }
