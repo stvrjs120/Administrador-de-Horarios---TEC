@@ -49,7 +49,7 @@ public class PrjUNISCH {
         tempSchedule.add(new clsSchedule("Viernes", "7:00am", "4:00pm"));
         myMetodes.insertScheduleTeacher("eballestero", tempSchedule);
         
-        myMetodes.insertTeacher("olopez", "Oscar Lopez", "olop");
+        myMetodes.insertTeacher("rjimenes", "Rodolfo Jimenes", "olop");
         tempSchedule.clear();
         tempSchedule.add(new clsSchedule("Lunes", "7:00am", "4:00pm"));
         tempSchedule.add(new clsSchedule("Martes", "7:00am", "4:00pm"));
@@ -98,6 +98,15 @@ public class PrjUNISCH {
         myMetodes.insertFaculty("Letters & Science");
         
         //
+        //Faculty-Teachers insertions
+        //
+        myMetodes.insertFacultyTeacher("Computer Engineering", "mcampos");
+        myMetodes.insertFacultyTeacher("Computer Engineering", "lvalerio");
+        myMetodes.insertFacultyTeacher("Letters & Science", "eballestero");
+        myMetodes.insertFacultyTeacher("Letters & Science", "rjimenes");
+        myMetodes.insertFacultyTeacher("Letters & Science", "jrojas");
+        
+        //
         //Classrooms insertions
         //
         ArrayList<clsEquipment> tempEquipment1 = new ArrayList<>();
@@ -131,7 +140,7 @@ public class PrjUNISCH {
         
         ArrayList<clsSubject> lstSubject2 = new ArrayList<>();
         lstSubject2.add(new clsPracticalSubject(4, "Sistemas Operativos", "Linux", "Presentaciones"));
-        lstSubject2.add(new clsPracticalSubject(4, "Diseño de software", "Windows", "Presentaciones"));
+        lstSubject2.add(new clsPracticalSubject(4, "Diseño de Software", "Windows", "Presentaciones"));
         lstSubject2.add(new clsPracticalSubject(4, "Diseño de Interfaces", "iOS", "Encuestas"));
         lstSubject2.add(new clsPracticalSubject(4, "Estructuras de Datos", "Windows", "Presentaciones"));
         myMetodes.insertSubjects("Computer Engineering", lstSubject2);
@@ -144,9 +153,9 @@ public class PrjUNISCH {
         myMetodes.insertSemesterSubject("I", "2013", "Probabilidades");
         myMetodes.insertSemesterSubject("II", "2013", "Investigación de Operaciones");
         myMetodes.insertSemesterSubject("I", "2013", "Sistemas Operativos");
-        myMetodes.insertSemesterSubject("II", "2013", "Diseño de software");
-        myMetodes.insertSemesterSubject("I", "2013", "Diseño de interfaces");
-        myMetodes.insertSemesterSubject("II", "2013", "Estructura de Datos");
+        myMetodes.insertSemesterSubject("II", "2013", "Diseño de Software");
+        myMetodes.insertSemesterSubject("I", "2013", "Diseño de Interfaces");
+        myMetodes.insertSemesterSubject("II", "2013", "Estructuras de Datos");
         
         //
         //Subject-Classroom insertions
@@ -156,12 +165,21 @@ public class PrjUNISCH {
         myMetodes.insertSubjectClassroom("I", "2013", "Probabilidades", "Aula grande");
         myMetodes.insertSubjectClassroom("II", "2013", "Investigación de Operaciones", "Pecera");
         myMetodes.insertSubjectClassroom("I", "2013", "Sistemas Operativos", "LaboratorioN2");
-        myMetodes.insertSubjectClassroom("II", "2013", "Diseño de software", "LaboratorioN1");
-        myMetodes.insertSubjectClassroom("I", "2013", "Diseño de interfaces", "Laboratorio MAC");
-        myMetodes.insertSubjectClassroom("II", "2013", "Estructura de Datos", "LaboratorioN1");
+        myMetodes.insertSubjectClassroom("II", "2013", "Diseño de Software", "LaboratorioN1");
+        myMetodes.insertSubjectClassroom("I", "2013", "Diseño de Interfaces", "Laboratorio MAC");
+        myMetodes.insertSubjectClassroom("II", "2013", "Estructuras de Datos", "LaboratorioN1");
         
         //
-        //Subject
+        //Teacher-Subject insertions
         //
+        myMetodes.insertTeacherSubject("eballestero", "Calculo");
+        myMetodes.insertTeacherSubject("eballestero", "Probabilidades");
+        myMetodes.insertTeacherSubject("rjimenes", "Investigación de Operaciones");
+        myMetodes.insertTeacherSubject("lvalerio", "Diseño de Interfaces");
+        myMetodes.insertTeacherSubject("lvalerio", "Estructuras de Datos");
+        myMetodes.insertTeacherSubject("mcampos", "Diseño de Software");
+        myMetodes.insertTeacherSubject("mcampos", "Sistemas Operativos");
+        myMetodes.insertTeacherSubject("jrojas", "Filosoficos");
+        
     }
 }

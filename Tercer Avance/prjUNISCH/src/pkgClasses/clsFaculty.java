@@ -45,7 +45,7 @@ public class clsFaculty {
      * @uml.associationEnd multiplicity="(0 -1)" ordering="true"
      * inverse="Faculty:pkgClases.clsSubject"
      */
-    private ArrayList<clsSubject> lstSubject = null;
+    private ArrayList<clsSubject> lstSubject;
 
     /**
      * Getter of the property <tt>lstSubject</tt>
@@ -103,9 +103,7 @@ public class clsFaculty {
      */
     public clsFaculty(String pFacultyName) {
         facultyName = pFacultyName;
-    }
-    
-    public void insertSubject(int pCredits, String pSubjectName) {
-        
+        lstTeacher = new ArrayList<>();
+        lstSubject = new ArrayList<>();
     }
 }

@@ -189,6 +189,20 @@ public class clsMetods {
         lstUsers.add(tempTeacher);
     }
     
+    public void insertFacultyTeacher(String pFaculty, String pID) {
+        for (clsFaculty tempFaculty : lstFaculty)
+            if(tempFaculty.getFacultyName().equals(pFaculty))
+                for (clsUser tempUser : lstUsers)
+                    if (tempUser.getClass() == clsTeacher.class) {
+                        clsTeacher tempTeacher = (clsTeacher) tempUser;
+                        if(tempTeacher.getID().equals(pID)) {
+                            ArrayList<clsTeacher> tempLstTeacher = tempFaculty.getLstTeacher();
+                            tempLstTeacher.add(tempTeacher);
+                            break;
+                        }
+                    }
+    }
+    
     public void insertSubjects(String pFaculty, ArrayList<clsSubject> pLstSubject) {
         for (clsFaculty tempFaculty : lstFaculty)
             if(tempFaculty.getFacultyName().equals(pFaculty)) {
@@ -200,8 +214,10 @@ public class clsMetods {
     public void insertScheduleSubject(String pSubjectName, String pDay, String pStartSchedule, String pEndSchedule) {
         for (clsFaculty tempFaculty : lstFaculty)
             for (clsSubject tempSubject : tempFaculty.getLstSubject())
-                if(tempSubject.getSubjectName().equals(pSubjectName))
+                if(tempSubject.getSubjectName().equals(pSubjectName)) {
                     tempSubject.setSchedule(new clsSchedule(pDay, pStartSchedule, pEndSchedule));
+                    break;
+                }
     }
     
     public void insertScheduleTeacher(String pID, ArrayList<clsSchedule> pSchedule) {
@@ -227,7 +243,7 @@ public class clsMetods {
                         }
     }
     
-    public boolean insertSubjectClassroom(String pSemesterNumber, String pSemesterYear, String pSubjectName, String pClassroomName) {
+    public void insertSubjectClassroom(String pSemesterNumber, String pSemesterYear, String pSubjectName, String pClassroomName) {
         for (clsSemester tempSemester : lstSemester)
             if(tempSemester.getSemesterYear().equals(pSemesterYear) && tempSemester.getSemesterNumber().equals(pSemesterNumber))
                 for (clsFaculty tempFaculty : lstFaculty)
@@ -236,10 +252,26 @@ public class clsMetods {
                             for (clsClassroom tempClassroom : lstClassroom)
                                 if(tempClassroom.getClassroomName().equals(pClassroomName)) {
                                     tempSubject.setClsClassroom(tempClassroom);
-                                    return true;
+                                    break;
                                 }
-        return false;
     }
     
-    
+    public boolean insertTeacherSubject(String pID, String pSubjectName) {
+        nofind:
+        for (clsFaculty tempFaculty : lstFaculty) {
+            ArrayList<clsTeacher> tempLstTeacher = tempFaculty.getLstTeacher();
+            for (clsTeacher tempTeacher : tempLstTeacher)
+                if (tempTeacher.getID().equals(pID)) {
+                    ArrayList<clsSubject> tempLstSubject = tempFaculty.getLstSubject();
+                    for (clsSubject tempSubject : tempLstSubject)
+                        if (tempSubject.getSubjectName().equals(pSubjectName)) {
+                            ArrayList<clsSubject> tempTeacherLstSubject = tempTeacher.getLstSubject();
+                            tempTeacherLstSubject.add(tempSubject);
+                            return true;
+                        }
+                    break nofind;
+                }
+        }
+        return false;
+    }
 }

@@ -72,5 +72,6 @@ public class clsTeacher extends clsUser {
      */
     public clsTeacher(String pID, String pName, String pPassword) {
         super(pID, pName, pPassword);
+        lstSubject = new ArrayList<>();
     }
 }
