@@ -92,9 +92,9 @@ public abstract class clsUser {
     /**
      * User class constructor
      *
-     * @param pid
-     * @param pName
-     * @param pPassword
+     * @param pid User's id
+     * @param pName User's name
+     * @param pPassword User's password
      */
     public clsUser(String pid, String pName, String pPassword) {
         id = pid;

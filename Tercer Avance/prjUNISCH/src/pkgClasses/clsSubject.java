@@ -151,9 +151,9 @@ public abstract class clsSubject {
     /**
      * Subject class constructor
      *
-     * @param pCredits
-     * @param pSubjectName
-     * @param pSchool
+     * @param pCredits Subject's credits
+     * @param pSubjectName Subject's name
+     * @param pSchool Subject's school
      */
     public clsSubject(int pCredits, String pSubjectName) {
         credits = pCredits;

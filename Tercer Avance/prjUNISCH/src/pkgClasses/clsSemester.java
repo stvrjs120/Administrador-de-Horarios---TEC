@@ -95,7 +95,8 @@ public class clsSemester {
     /**
      * Semester class constructor
      *
-     * @param pSemesterNumber
+     * @param pSemesterNumber Semester's number
+     * @param pSemesterYear Semester's year
      */
     public clsSemester(String pSemesterNumber, String pSemesterYear) {
         lstSubject = new ArrayList<>();

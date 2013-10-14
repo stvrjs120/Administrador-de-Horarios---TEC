@@ -66,12 +66,12 @@ public class clsTeoricalClassroom extends clsClassroom {
     /**
      * TeoricalClassroom class constructor
      *
-     * @param pClassroomName
-     * @param pClassroomNumber
-     * @param pLocation
-     * @param pCapacity
-     * @param pAirConditioner
-     * @param pMultimedia
+     * @param pClassroomName Teorical Classroom's name
+     * @param pClassroomNumber Teorical Classroom's number
+     * @param pLocation Teorical Classroom's location
+     * @param pCapacity Teorical Classroom's capacity
+     * @param pAirConditioner Teorical Classroom's air conditioner
+     * @param pMultimedia Teorical Classroom's multimedia
      */
     public clsTeoricalClassroom(String pClassroomName, int pClassroomNumber, String pLocation, int pCapacity, boolean pAirConditioner, boolean pMultimedia) {
         super(pCapacity, pClassroomName, pClassroomNumber, pLocation);

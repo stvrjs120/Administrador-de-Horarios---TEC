@@ -99,7 +99,7 @@ public class clsFaculty {
     /**
      * Faculty class constructor
      *
-     * @param pFacultyName
+     * @param pFacultyName Faculty's name
      */
     public clsFaculty(String pFacultyName) {
         facultyName = pFacultyName;

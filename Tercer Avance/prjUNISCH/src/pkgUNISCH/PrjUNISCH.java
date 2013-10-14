@@ -2,10 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package prjunisch;
+package pkgUNISCH;
 
 import java.util.ArrayList;
 import pkgClasses.*;
+import pkgExceptions.ExceptionSchedule;
+import pkgForms.frmLogin;
 import pkgMetods.clsMetods;
 
 /**
@@ -22,8 +24,12 @@ public class PrjUNISCH {
     public static void main(String[] args) {
         // TODO code application logic here
         inserts();
+        new frmLogin(myMetodes).setVisible(true);
     }
     
+    /**
+     * Function to insert all the data
+     */
     public static void inserts() {
         
         //
@@ -42,47 +48,47 @@ public class PrjUNISCH {
         //
         myMetodes.insertTeacher("eballestero", "Esteban Ballestero", "eballes");
         ArrayList<clsSchedule> tempSchedule = new ArrayList<>();
-        tempSchedule.add(new clsSchedule("Lunes", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Martes", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Miercoles", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Jueves", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Viernes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Lunes", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Martes", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Miercoles", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Jueves", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Viernes", "7:00", "16:00"));
         myMetodes.insertScheduleTeacher("eballestero", tempSchedule);
         
-        myMetodes.insertTeacher("rjimenes", "Rodolfo Jimenes", "olop");
+        myMetodes.insertTeacher("rjimenes", "Rodolfo Jimenes", "rjimen");
         tempSchedule.clear();
-        tempSchedule.add(new clsSchedule("Lunes", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Martes", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Miercoles", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Jueves", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Viernes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Lunes", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Martes", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Miercoles", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Jueves", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Viernes", "7:00", "16:00"));
         myMetodes.insertScheduleTeacher("olopez", tempSchedule);
         
         myMetodes.insertTeacher("lvalerio", "Lonera Valerio", "ovale");
         tempSchedule.clear();
-        tempSchedule.add(new clsSchedule("Lunes", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Martes", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Miercoles", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Jueves", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Viernes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Lunes", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Martes", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Miercoles", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Jueves", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Viernes", "7:00", "16:00"));
         myMetodes.insertScheduleTeacher("lvalerio", tempSchedule);
         
         myMetodes.insertTeacher("mcampos", "Marvin Campos", "mcamp");
         tempSchedule.clear();
-        tempSchedule.add(new clsSchedule("Lunes", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Martes", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Miercoles", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Jueves", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Viernes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Lunes", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Martes", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Miercoles", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Jueves", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Viernes", "7:00", "16:00"));
         myMetodes.insertScheduleTeacher("mcampos", tempSchedule);
         
         myMetodes.insertTeacher("jrojas", "Jiddu Rojas", "jroj");
         tempSchedule.clear();
-        tempSchedule.add(new clsSchedule("Lunes", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Martes", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Miercoles", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Jueves", "7:00am", "4:00pm"));
-        tempSchedule.add(new clsSchedule("Viernes", "7:00am", "4:00pm"));
+        tempSchedule.add(new clsSchedule("Lunes", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Martes", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Miercoles", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Jueves", "7:00", "16:00"));
+        tempSchedule.add(new clsSchedule("Viernes", "7:00", "16:00"));
         myMetodes.insertScheduleTeacher("jrojas", tempSchedule);
         
         //
@@ -181,5 +187,49 @@ public class PrjUNISCH {
         myMetodes.insertTeacherSubject("mcampos", "Sistemas Operativos");
         myMetodes.insertTeacherSubject("jrojas", "Filosoficos");
         
+        //
+        //Subject-Schedule insertions
+        //
+        try {
+            myMetodes.insertSubjectSchedule("I", "2013", "Calculo", new clsSchedule("Martes", "12:30", "14:00"));
+        } catch (ExceptionSchedule ex) {
+            System.out.println(ex.toString());
+        }
+        try {
+            myMetodes.insertSubjectSchedule("I", "2013", "Probabilidades", new clsSchedule("Lunes", "12:30", "14:00"));
+        } catch (ExceptionSchedule ex) {
+            System.out.println(ex.toString());
+        }
+        try {
+            myMetodes.insertSubjectSchedule("I", "2013", "Diseño de Interfaces", new clsSchedule("Martes", "8:00", "11:00"));
+        } catch (ExceptionSchedule ex) {
+            System.out.println(ex.toString());
+        }
+        try {
+            myMetodes.insertSubjectSchedule("I", "2013", "Sistemas Operativos", new clsSchedule("Lunes", "14:00", "16:00"));
+        } catch (ExceptionSchedule ex) {
+            System.out.println(ex.toString());
+        }
+        
+        try {
+            myMetodes.insertSubjectSchedule("II", "2013", "Filosoficos", new clsSchedule("Lunes", "12:30", "16:00"));
+        } catch (ExceptionSchedule ex) {
+            System.out.println(ex.toString());
+        }
+        try {
+            myMetodes.insertSubjectSchedule("II", "2013", "Investigación de Operaciones", new clsSchedule("Lunes", "10:00", "11:30"));
+        } catch (ExceptionSchedule ex) {
+            System.out.println(ex.toString());
+        }
+        try {
+            myMetodes.insertSubjectSchedule("II", "2013", "Diseño de Software", new clsSchedule("Jueves", "12:00", "16:00"));
+        } catch (ExceptionSchedule ex) {
+            System.out.println(ex.toString());
+        }
+        try {
+            myMetodes.insertSubjectSchedule("II", "2013", "Estructuras de Datos", new clsSchedule("Miercoles", "8:00", "11:00"));
+        } catch (ExceptionSchedule ex) {
+            System.out.println(ex.toString());
+        }
     }
 }

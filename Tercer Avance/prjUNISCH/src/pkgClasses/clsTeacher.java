@@ -65,10 +65,10 @@ public class clsTeacher extends clsUser {
     /**
      * Teacher class constructor
      *
-     * @param pID
-     * @param pName
-     * @param pPassword
-     * @param pSchedule
+     * @param pID Teacher's id
+     * @param pName Teacher's name
+     * @param pPassword Teacher's password
+     * @param pSchedule Teacher's schedule
      */
     public clsTeacher(String pID, String pName, String pPassword) {
         super(pID, pName, pPassword);

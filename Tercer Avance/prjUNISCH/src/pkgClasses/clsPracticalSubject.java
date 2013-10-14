@@ -66,10 +66,10 @@ public class clsPracticalSubject extends clsSubject {
     /**
      * PracticalSubject class constructor;
      *
-     * @param pCredits
-     * @param pSubjectName
-     * @param pOperativeSystem
-     * @param pSupportMaterial
+     * @param pCredits Practical Subject's credits
+     * @param pSubjectName Practical Subject's name
+     * @param pOperativeSystem Practical Subject's operative system
+     * @param pSupportMaterial Practical Subject's support material
      */
     public clsPracticalSubject(int pCredits, String pSubjectName, String pOperativeSystem, String pSupportMaterial) {
         super(pCredits, pSubjectName);

@@ -43,9 +43,9 @@ public class clsCoordinator extends clsUser {
     /**
      * Coordinator class constructor
      *
-     * @param pID
-     * @param pName
-     * @param pPassword
+     * @param pID Coordinator's ID
+     * @param pName Coordinator's name
+     * @param pPassword Coordinator's password
      */
     public clsCoordinator(String pID, String pName, String pPassword) {
         super(pID, pName, pPassword);

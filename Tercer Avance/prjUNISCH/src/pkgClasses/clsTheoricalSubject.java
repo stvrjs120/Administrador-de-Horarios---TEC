@@ -40,9 +40,9 @@ public class clsTheoricalSubject extends clsSubject {
     /**
      * Theorical class constructor
      *
-     * @param pCredits
-     * @param pSubjectName
-     * @param pWebsite
+     * @param pCredits Theorical Subject's credits
+     * @param pSubjectName Theorical Subject's name
+     * @param pWebsite Theorical Subject's website
      */
     public clsTheoricalSubject(int pCredits, String pSubjectName, String pWebsite) {
         super(pCredits, pSubjectName);

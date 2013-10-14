@@ -118,10 +118,10 @@ public abstract class clsClassroom {
     /**
      * Classroom class constructor
      *
-     * @param pCapacity
-     * @param pClassroomName
-     * @param pClassroomNumber
-     * @param pLocation
+     * @param pCapacity Classroom's capacity
+     * @param pClassroomName Classroom's name
+     * @param pClassroomNumber Classroom's number
+     * @param pLocation Classroom's location
      */
     public clsClassroom(int pCapacity, String pClassroomName, int pClassroomNumber, String pLocation) {
         capacity = pCapacity;

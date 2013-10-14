@@ -92,9 +92,9 @@ public class clsSchedule {
     /**
      * Schedule class constructor
      *
-     * @param pDay
-     * @param pStartSchedule
-     * @param pEndSchedule
+     * @param pDay Schedule's day
+     * @param pStartSchedule Schedule's start at
+     * @param pEndSchedule Schedule's end at
      */
     public clsSchedule(String pDay, String pStartSchedule, String pEndSchedule) {
         day = pDay;

@@ -66,8 +66,8 @@ public class clsEquipment {
     /**
      * Equipment class constructor
      *
-     * @param pAmount
-     * @param pEquipment
+     * @param pAmount Equipment's amount
+     * @param pEquipmentName Equipment's name
      */
     public clsEquipment(int pAmount, String pEquipmentName) {
         amount = pAmount;

@@ -43,10 +43,10 @@ public class clsPracticalClassroom extends clsClassroom {
     /**
      * PracticalClassroom class constructor
      *
-     * @param pCapacity
-     * @param pClassroomName
-     * @param pClassroomNumber
-     * @param pLocation
+     * @param pCapacity Practical classroom's capacity
+     * @param pClassroomName Practical classroom's name
+     * @param pClassroomNumber Practical classroom's number
+     * @param pLocation Practical classroom's location
      */
     public clsPracticalClassroom(int pCapacity, String pClassroomName, int pClassroomNumber, String pLocation) {
         super(pCapacity, pClassroomName, pClassroomNumber, pLocation);

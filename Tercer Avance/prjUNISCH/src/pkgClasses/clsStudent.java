@@ -43,9 +43,9 @@ public class clsStudent extends clsUser {
     /**
      * Student class constructor
      *
-     * @param pid
-     * @param pName
-     * @param pPassword
+     * @param pid Student's id
+     * @param pName Student's name
+     * @param pPassword Student's password
      */
     public clsStudent(String pid, String pName, String pPassword) {
         super(pid, pName, pPassword);
