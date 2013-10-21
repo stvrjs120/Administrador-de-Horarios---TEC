@@ -211,7 +211,7 @@ public class clsMetods {
     /**
      * Function to insert faculties into the faculty's list
      * @param pFaculty faculty's name
-     * @param pID faculty's id
+     * @param pID teacher's id
      */
     public void insertFacultyTeacher(String pFaculty, String pID) {
         for (clsFaculty tempFaculty : lstFaculty)

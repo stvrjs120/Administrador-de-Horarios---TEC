@@ -49,5 +49,6 @@ public class clsStudent extends clsUser {
      */
     public clsStudent(String pid, String pName, String pPassword) {
         super(pid, pName, pPassword);
+        lstSemester = new ArrayList<>();
     }
 }
