@@ -37,117 +37,58 @@ public class clsClassroomTest {
     }
 
     /**
-     * Test of getClassroomName method, of class clsClassroom.
+     * SetGet-ClassroomName-clsClassroom
+     * Se probara que funcionen los métodos setClassroomName y getClassroomName de la clase clsClassroom
      */
     @Test
-    public void testGetClassroomName() {
-        System.out.println("getClassroomName");
-        clsClassroom instance = null;
-        String expResult = "";
+    public void SetGetClassroomName() {
+        System.out.println("Testing SetGet-ClassroomName-clsClassroom...");
+        clsClassroom instance = new clsPracticalClassroom(0, "", 0, "");
+        instance.setClassroomName("AU01");
+        String expResult = "AU01";
         String result = instance.getClassroomName();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
-
+    
     /**
-     * Test of setClassroomName method, of class clsClassroom.
+     * SetGet-ClassroomNumber-clsClassroom
+     * Se probara que funcionen los métodos setClassroomNumber y getClassroomNumber de la clase clsClassroom
      */
     @Test
-    public void testSetClassroomName() {
-        System.out.println("setClassroomName");
-        String classroomName = "";
-        clsClassroom instance = null;
-        instance.setClassroomName(classroomName);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getClassroomNumber method, of class clsClassroom.
-     */
-    @Test
-    public void testGetClassroomNumber() {
-        System.out.println("getClassroomNumber");
-        clsClassroom instance = null;
-        int expResult = 0;
+    public void SetGetClassroomNumber() {
+        System.out.println("Testing SetGet-ClassroomNumber-clsClassroom...");
+        clsClassroom instance = new clsPracticalClassroom(0, "", 0, "");
+        instance.setClassroomNumber(1);
+        int expResult = 1;
         int result = instance.getClassroomNumber();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
-
+    
     /**
-     * Test of getLocation method, of class clsClassroom.
+     * SetGet-Location-clsClassroom
+     * Se probara que funcionen los métodos setLocation y getLocation de la clase clsClassroom
      */
     @Test
-    public void testGetLocation() {
-        System.out.println("getLocation");
-        clsClassroom instance = null;
-        String expResult = "";
+    public void SetGetLocation() {
+        System.out.println("Testing SetGet-Location-clsClassroom...");
+        clsClassroom instance = new clsPracticalClassroom(0, "", 0, "");
+        instance.setLocation("Junto al comedor");
+        String expResult = "Junto al comedor";
         String result = instance.getLocation();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
-
+    
     /**
-     * Test of setLocation method, of class clsClassroom.
+     * SetGet-Capacity-clsClassroom
+     * Se probara que funcionen los métodos setCapacity y getCapacity de la clase clsClassroom
      */
     @Test
-    public void testSetLocation() {
-        System.out.println("setLocation");
-        String location = "";
-        clsClassroom instance = null;
-        instance.setLocation(location);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setClassroomNumber method, of class clsClassroom.
-     */
-    @Test
-    public void testSetClassroomNumber() {
-        System.out.println("setClassroomNumber");
-        int classroomNumber = 0;
-        clsClassroom instance = null;
-        instance.setClassroomNumber(classroomNumber);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getCapacity method, of class clsClassroom.
-     */
-    @Test
-    public void testGetCapacity() {
-        System.out.println("getCapacity");
-        clsClassroom instance = null;
-        int expResult = 0;
+    public void SetGetCapacity() {
+        System.out.println("Testing SetGet-Location-clsClassroom...");
+        clsClassroom instance = new clsPracticalClassroom(0, "", 0, "");
+        instance.setCapacity(30);
+        int expResult = 30;
         int result = instance.getCapacity();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setCapacity method, of class clsClassroom.
-     */
-    @Test
-    public void testSetCapacity() {
-        System.out.println("setCapacity");
-        int capacity = 0;
-        clsClassroom instance = null;
-        instance.setCapacity(capacity);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    public class clsClassroomImpl extends clsClassroom {
-
-        public clsClassroomImpl() {
-            super(0, "", 0, "");
-        }
     }
 }

@@ -38,29 +38,17 @@ public class clsCoordinatorTest {
     }
 
     /**
-     * Test of getLstSemester method, of class clsCoordinator.
+     * SetGet-LstSemester-clsCoordinator
+     * Se probara que funcionen los métodos setLstSemester y getLstSemester de la clase clsCoordinator
      */
     @Test
-    public void testGetLstSemester() {
-        System.out.println("getLstSemester");
-        clsCoordinator instance = null;
-        ArrayList expResult = null;
-        ArrayList result = instance.getLstSemester();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setLstSemester method, of class clsCoordinator.
-     */
-    @Test
-    public void testSetLstSemester() {
-        System.out.println("setLstSemester");
-        ArrayList<clsSemester> lstSemester = null;
-        clsCoordinator instance = null;
-        instance.setLstSemester(lstSemester);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void SetGetLstSemester() {
+        System.out.println("Testing SetGet-LstSemester-clsCoordinator...");
+        clsCoordinator instance = new clsCoordinator("", "", "");
+        ArrayList<clsSemester> tempList = new ArrayList<clsSemester>();
+        tempList.add(new clsSemester("I", "2013"));
+        instance.setLstSemester(tempList);
+        ArrayList<clsSemester> result = instance.getLstSemester();
+        assertEquals(tempList, result);
     }
 }
