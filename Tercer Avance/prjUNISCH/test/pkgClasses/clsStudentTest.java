@@ -37,30 +37,5 @@ public class clsStudentTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of getLstSemester method, of class clsStudent.
-     */
-    @Test
-    public void testGetLstSemester() {
-        System.out.println("getLstSemester");
-        clsStudent instance = null;
-        ArrayList expResult = null;
-        ArrayList result = instance.getLstSemester();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setLstSemester method, of class clsStudent.
-     */
-    @Test
-    public void testSetLstSemester() {
-        System.out.println("setLstSemester");
-        ArrayList<clsSemester> lstSemester = null;
-        clsStudent instance = null;
-        instance.setLstSemester(lstSemester);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+    
 }

@@ -36,57 +36,5 @@ public class clsPracticalSubjectTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of getSupportMaterial method, of class clsPracticalSubject.
-     */
-    @Test
-    public void testGetSupportMaterial() {
-        System.out.println("getSupportMaterial");
-        clsPracticalSubject instance = null;
-        String expResult = "";
-        String result = instance.getSupportMaterial();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setSupportMaterial method, of class clsPracticalSubject.
-     */
-    @Test
-    public void testSetSupportMaterial() {
-        System.out.println("setSupportMaterial");
-        String supportMaterial = "";
-        clsPracticalSubject instance = null;
-        instance.setSupportMaterial(supportMaterial);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getOperativeSystem method, of class clsPracticalSubject.
-     */
-    @Test
-    public void testGetOperativeSystem() {
-        System.out.println("getOperativeSystem");
-        clsPracticalSubject instance = null;
-        String expResult = "";
-        String result = instance.getOperativeSystem();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setOperativeSystem method, of class clsPracticalSubject.
-     */
-    @Test
-    public void testSetOperativeSystem() {
-        System.out.println("setOperativeSystem");
-        String operativeSystem = "";
-        clsPracticalSubject instance = null;
-        instance.setOperativeSystem(operativeSystem);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+    
 }

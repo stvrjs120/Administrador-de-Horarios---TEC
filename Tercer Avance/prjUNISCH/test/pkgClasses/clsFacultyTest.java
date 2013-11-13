@@ -38,83 +38,46 @@ public class clsFacultyTest {
     }
 
     /**
-     * Test of getFacultyName method, of class clsFaculty.
+     * SetGet-FacultyName-clsFaculty
+     * Se probara que funcionen los métodos setFacultyName y getFacultyName de la clase clsFaculty
      */
     @Test
-    public void testGetFacultyName() {
-        System.out.println("getFacultyName");
-        clsFaculty instance = null;
-        String expResult = "";
+    public void SetGetFacultyName() {
+        System.out.println("Testing SetGet-FacultyName-clsFaculty...");
+        clsFaculty instance = new clsFaculty("");
+        instance.setFacultyName("Computación");
+        String expResult = "Computación";
         String result = instance.getFacultyName();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
-
+    
     /**
-     * Test of setFacultyName method, of class clsFaculty.
+     * SetGet-LstSubject-clsFaculty
+     * Se probara que funcionen los métodos setLstSubject y getLstSubject de la clase clsFaculty
      */
     @Test
-    public void testSetFacultyName() {
-        System.out.println("setFacultyName");
-        String facultyName = "";
-        clsFaculty instance = null;
-        instance.setFacultyName(facultyName);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void SetGetLstSubject() {
+        System.out.println("Testing SetGet-LstSubject-clsFaculty...");
+        clsFaculty instance = new clsFaculty("");
+        ArrayList<clsSubject> tempList = new ArrayList<clsSubject>();
+        tempList.add(new clsPracticalSubject(4, "Investigación de Operaciones", "Linux", "Proyector"));
+        instance.setLstSubject(tempList);
+        ArrayList<clsSubject> result = instance.getLstSubject();
+        assertEquals(tempList, result);
     }
-
+    
     /**
-     * Test of getLstSubject method, of class clsFaculty.
+     * SetGet-LstTeacher-clsFaculty
+     * Se probara que funcionen los métodos setLstTeacher y getLstTeacher de la clase clsFaculty
      */
     @Test
-    public void testGetLstSubject() {
-        System.out.println("getLstSubject");
-        clsFaculty instance = null;
-        ArrayList expResult = null;
-        ArrayList result = instance.getLstSubject();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setLstSubject method, of class clsFaculty.
-     */
-    @Test
-    public void testSetLstSubject() {
-        System.out.println("setLstSubject");
-        ArrayList<clsSubject> lstSubject = null;
-        clsFaculty instance = null;
-        instance.setLstSubject(lstSubject);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getLstTeacher method, of class clsFaculty.
-     */
-    @Test
-    public void testGetLstTeacher() {
-        System.out.println("getLstTeacher");
-        clsFaculty instance = null;
-        ArrayList expResult = null;
-        ArrayList result = instance.getLstTeacher();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setLstTeacher method, of class clsFaculty.
-     */
-    @Test
-    public void testSetLstTeacher() {
-        System.out.println("setLstTeacher");
-        ArrayList<clsTeacher> lstTeacher = null;
-        clsFaculty instance = null;
-        instance.setLstTeacher(lstTeacher);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void SetGetLstTeacher() {
+        System.out.println("Testing SetGet-LstTeacher-clsFaculty...");
+        clsFaculty instance = new clsFaculty("");
+        ArrayList<clsTeacher> tempList = new ArrayList<clsTeacher>();
+        tempList.add(new clsTeacher("olopez", "Oscar Lopez", "123456"));
+        instance.setLstTeacher(tempList);
+        ArrayList<clsTeacher> result = instance.getLstTeacher();
+        assertEquals(tempList, result);
     }
 }

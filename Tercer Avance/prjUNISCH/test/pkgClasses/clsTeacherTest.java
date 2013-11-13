@@ -37,57 +37,5 @@ public class clsTeacherTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of getLstSchedule method, of class clsTeacher.
-     */
-    @Test
-    public void testGetLstSchedule() {
-        System.out.println("getLstSchedule");
-        clsTeacher instance = null;
-        ArrayList expResult = null;
-        ArrayList result = instance.getLstSchedule();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setLstSchedule method, of class clsTeacher.
-     */
-    @Test
-    public void testSetLstSchedule() {
-        System.out.println("setLstSchedule");
-        ArrayList<clsSchedule> lstSchedule = null;
-        clsTeacher instance = null;
-        instance.setLstSchedule(lstSchedule);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getLstSubject method, of class clsTeacher.
-     */
-    @Test
-    public void testGetLstSubject() {
-        System.out.println("getLstSubject");
-        clsTeacher instance = null;
-        ArrayList expResult = null;
-        ArrayList result = instance.getLstSubject();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setLstSubject method, of class clsTeacher.
-     */
-    @Test
-    public void testSetLstSubject() {
-        System.out.println("setLstSubject");
-        ArrayList<clsSubject> lstSubject = null;
-        clsTeacher instance = null;
-        instance.setLstSubject(lstSubject);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+    
 }
