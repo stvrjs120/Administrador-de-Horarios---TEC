@@ -38,7 +38,7 @@ public class clsStudentTest {
     }
     
     @Test
-    public void SetGetSemesterclsStudent() {
+    public void SetGetSemester() {
         System.out.println("Testing SetGet-Semester-clsStudent...");
         clsStudent instance = new clsStudent("", "", "");
         clsSemester semester = new clsSemester("1", "2013");

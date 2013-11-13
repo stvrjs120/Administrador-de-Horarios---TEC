@@ -37,7 +37,7 @@ public class clsScheduleTest {
     }
 
     @Test
-    public void SetGetDayclsSchedule() {
+    public void SetGetDay() {
         System.out.println("Testing SetGet-Day-clsSchedule...");
         clsSchedule instance = new clsSchedule("", "", "");
         String expResult = "Lunes";
@@ -47,7 +47,7 @@ public class clsScheduleTest {
     }
     
     @Test
-    public void SetGetStarScheduleclsSchedule() {
+    public void SetGetStarSchedule() {
         System.out.println("Testing SetGet-StarSchedule-clsSchedule...");
         clsSchedule instance = new clsSchedule("", "", "");
         String expResult = "08:00";
@@ -57,7 +57,7 @@ public class clsScheduleTest {
     }
     
     @Test
-    public void SetGetEndScheduleclsSchedule() {
+    public void SetGetEndSchedule() {
         System.out.println("Testing SetGet-EndSchedule-clsSchedule...");
         clsSchedule instance = new clsSchedule("", "", "");
         String expResult = "16:00";

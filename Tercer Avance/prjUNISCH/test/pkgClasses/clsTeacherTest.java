@@ -38,7 +38,7 @@ public class clsTeacherTest {
     }
     
     @Test
-    public void SetGetScheduleclsTeacher() {
+    public void SetGetSchedule() {
         System.out.println("Testing SetGet-Schedule-clsTeacher...");
         clsTeacher instance = new clsTeacher("", "", "");
         clsSchedule schedule = new clsSchedule("Lunes", "08:00","16:00");
@@ -50,7 +50,7 @@ public class clsTeacherTest {
     }
     
     @Test
-    public void SetGetSubjectclsTeacher() {
+    public void SetGetSubject() {
         System.out.println("Testing SetGet-Subject-clsTeacher...");
         clsTeacher instance = new clsTeacher("", "", "");
         clsSubject subject = new clsPracticalSubject(4, "Emprendedores", "Windows", "");
