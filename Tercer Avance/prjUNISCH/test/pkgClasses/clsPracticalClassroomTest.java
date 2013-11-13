@@ -36,6 +36,16 @@ public class clsPracticalClassroomTest {
     @After
     public void tearDown() {
     }
-
     
+    @Test
+    public void SetGetlstEquipment() {
+        System.out.println("Testing SetGet-lstEquipment-clsPracticalClassroom...");
+        clsPracticalClassroom instance = new clsPracticalClassroom(0, "", 0, "");
+        clsEquipment equipo = new clsEquipment(30, "Computadora");
+        ArrayList<clsEquipment> expResult = new ArrayList<>();
+        expResult.add(equipo);
+        instance.setLstEquipment(expResult);
+        ArrayList<clsEquipment> result = instance.getLstEquipment();
+        assertEquals(expResult, result);
+    }
 }

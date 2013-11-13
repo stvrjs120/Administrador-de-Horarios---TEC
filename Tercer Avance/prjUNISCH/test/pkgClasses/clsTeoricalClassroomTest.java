@@ -35,6 +35,24 @@ public class clsTeoricalClassroomTest {
     @After
     public void tearDown() {
     }
-
     
+    @Test
+    public void SetGetAirConditioner() {
+        System.out.println("Testing SetGet-AirConditioner-clsTheoricalClassroom...");
+        clsTeoricalClassroom instance = new clsTeoricalClassroom("", 0, "", 0, false, false);
+        boolean expResult = true;
+        instance.setAirConditioner(true);
+        boolean result = instance.isAirConditioner();
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void SetGetMultimedia() {
+        System.out.println("Testing SetGet-Multimedia-clsTheoricalClassroom...");
+        clsTeoricalClassroom instance = new clsTeoricalClassroom("", 0, "", 0, false, false);
+        boolean expResult = true;
+        instance.setMultimedia(true);
+        boolean result = instance.isMultimedia();
+        assertEquals(expResult, result);
+    }
 }

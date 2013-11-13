@@ -36,6 +36,16 @@ public class clsStudentTest {
     @After
     public void tearDown() {
     }
-
     
+    @Test
+    public void SetGetSemesterclsStudent() {
+        System.out.println("Testing SetGet-Semester-clsStudent...");
+        clsStudent instance = new clsStudent("", "", "");
+        clsSemester semester = new clsSemester("1", "2013");
+        ArrayList<clsSemester> expResult = new ArrayList<>();
+        expResult.add(semester);
+        instance.setLstSemester(expResult);
+        ArrayList<clsSemester> result = instance.getLstSemester();
+        assertEquals(expResult, result);
+    }
 }

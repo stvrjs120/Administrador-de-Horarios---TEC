@@ -36,6 +36,36 @@ public class clsSemesterTest {
     @After
     public void tearDown() {
     }
-
     
+    @Test
+    public void SetGetSemesterNumber() {
+        System.out.println("Testing SetGet-SemesterNumber-clsSemester...");
+        clsSemester instance = new clsSemester("", "");
+        String expResult = "1";
+        instance.setSemesterNumber("1");
+        String result = instance.getSemesterNumber();
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void SetGetSemesterYear() {
+        System.out.println("Testing SetGet-SemesterYear-clsSemester...");
+        clsSemester instance = new clsSemester("", "");
+        String expResult = "2013";
+        instance.setSemesterYear("2013");
+        String result = instance.getSemesterYear();
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void SetGetLstSubject() {
+        System.out.println("Testing SetGet-LstSubject-clsSemester...");
+        clsSemester instance = new clsSemester("", "");
+        clsSubject subject = new clsPracticalSubject(4, "Emprendedores", "Windows", "");
+        ArrayList<clsSubject> expResult = new ArrayList<>();
+        expResult.add(subject);
+        instance.setLstSubject(expResult);
+        ArrayList<clsSubject> result = instance.getLstSubject();
+        assertEquals(expResult, result);
+    }
 }
