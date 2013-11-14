@@ -363,4 +363,125 @@ public class clsMetodsTest {
         assertEquals(expSubjectName, resultSubjectName);
         assertEquals(expClassroomName, resultClassroomName);
     }
+    
+    @Test
+    public void insertTeacherSubject() {
+        System.out.println("Testing insertTeacherSubject-clsMethods...");
+        clsMetods methods = new clsMetods();
+        clsFaculty facultad = new clsFaculty("Computación");
+        methods.getLstFaculty().add(facultad);
+        clsTeacher profe = new clsTeacher("lvalerio", "Lorena", "12345");
+        methods.getLstFaculty().get(0).getLstTeacher().add(profe);
+        clsSubject curso = new clsTheoricalSubject(4, "Estructuras de Datos", "www.Datos2.com");
+        methods.getLstFaculty().get(0).getLstSubject().add(curso);
+        String expNameResult = "Estructuras de Datos";
+        methods.insertTeacherSubject("lvalerio", "Estructuras de Datos");
+        String NameResult = methods.getLstFaculty().get(0).getLstTeacher().get(0).getLstSubject().get(0).getSubjectName();
+        assertEquals(expNameResult, NameResult);
+    }
+    
+    //IMCOMPLETO
+    @Test
+    public void insertSubjectSchedule() {
+        System.out.println("Testing insertSubjectSchedule-clsMethods...");
+        clsMetods methods = new clsMetods();
+        clsFaculty facultad = new clsFaculty("Computación");
+        methods.getLstFaculty().add(facultad);
+        clsSubject curso = new clsTheoricalSubject(4, "Estructuras de Datos", "www.Datos2.com");
+        methods.getLstFaculty().get(0).getLstSubject().add(curso);
+        clsSemester semestre = new clsSemester("I", "2013");
+        methods.getLstSemester().add(semestre);
+        
+        //String expNameResult = "Estructuras de Datos";
+        //methods.insertTeacherSubject("lvalerio", "Estructuras de Datos");
+        //String NameResult = methods.getLstFaculty().get(0).getLstTeacher().get(0).getLstSubject().get(0).getSubjectName();
+        //assertEquals(expNameResult, NameResult);
+    }
+    
+    @Test
+    public void evaluateScheduleTeacher() {
+        System.out.println("Testing evaluateScheduleTeacher-clsMethods...");
+        clsMetods methods = new clsMetods();
+        clsTeacher profe = new clsTeacher("lvalerio", "Lorena", "12345");
+        profe.getLstSubject().add(new clsTheoricalSubject(4, "Datos2", ""));
+        profe.getLstSubject().get(0).setSchedule(new clsSchedule("Lunes", "08:00", "11:00"));
+        clsSchedule horario = new clsSchedule("Lunes", "07:00", "10:00");
+        boolean expResult = methods.evaluateScheduleTeacher(profe, horario);
+        assertTrue(expResult);
+    }
+    
+    @Test
+    public void evaluateSubjectSemester() {
+        System.out.println("Testing evaluateSubjectSemester-clsMethods...");
+        clsMetods methods = new clsMetods();
+        clsSemester semestre = new clsSemester("I", "2013");
+        clsSubject materia = new clsTheoricalSubject(4, "Calculo", "");
+        semestre.getLstSubject().add(materia);
+        methods.getLstSemester().add(semestre);
+        boolean expResult = methods.evaluateSubjectSemester("I", "2013", "Calculo");
+        assertTrue(expResult);
+    }
+    
+    @Test
+    public void login() {
+        System.out.println("Testing login-clsMethods...");
+        clsMetods methods = new clsMetods();
+        clsUser user = new clsStudent("j0s3", "José", "12345");
+        methods.getLstUsers().add(user);
+        String expIDresult = "j0s3";
+        String expPassResult = "12345";
+        user = methods.login("j0s3", "12345");
+        String IDresult = user.getID();
+        String PassResult = user.getPassword();
+        assertEquals(expIDresult, IDresult);
+        assertEquals(expPassResult, PassResult);
+    }
+    
+    @Test
+    public void loadSubjects() {
+        System.out.println("Testing loadSubjects-clsMethods...");
+        clsMetods methods = new clsMetods();
+        clsSemester semestre = new clsSemester("I", "2013");
+        clsSubject materia = new clsTheoricalSubject(4, "Calculo", "");
+        clsSchedule horario = new clsSchedule("Martes", "08:00", "11:00");
+        materia.setSchedule(horario);
+        semestre.getLstSubject().add(materia);
+        methods.getLstSemester().add(semestre);
+        String expResult = "Caculo - Martes -> 08:00 to 11:00\n";
+        String result = methods.loadSubjects("I - 2013");
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void loadSubjectsTeacher() {
+        System.out.println("Testing loadSubjectsTeacher-clsMethods...");
+        clsMetods methods = new clsMetods();
+        clsSemester semestre = new clsSemester("I", "2013");
+        clsSubject materia = new clsTheoricalSubject(4, "Calculo", "");
+        clsSchedule horario = new clsSchedule("Martes", "08:00", "11:00");
+        materia.setSchedule(horario);
+        semestre.getLstSubject().add(materia);
+        methods.getLstSemester().add(semestre);
+        String expResult = "Caculo - Martes -> 08:00 to 11:00\n";
+        clsTeacher profe = new clsTeacher("Ballestero", "Esteban", "12345");
+        profe.getLstSubject().add(new clsTheoricalSubject(4, "Calculo", ""));
+        String result = methods.loadSubjectsTeacher(profe, "I - 2013");
+        assertEquals(expResult, result);
+    }
+    
+    public void loadClassroomSchedule() {
+        System.out.println("Testing loadClassroomSchedule-clsMethods...");
+        clsMetods methods = new clsMetods();
+        clsSemester semestre = new clsSemester("I", "2013");
+        clsSubject materia = new clsTheoricalSubject(4, "Calculo", "");
+        clsSchedule horario = new clsSchedule("Martes", "08:00", "11:00");
+        clsClassroom aula = new clsTeoricalClassroom("AU01", 1, "", 30, true, true);
+        materia.setClsClassroom(aula);
+        materia.setSchedule(horario);
+        semestre.getLstSubject().add(materia);
+        methods.getLstSemester().add(semestre);
+        String expResult = "1 - 2013\n     Martes -> 08:00 tot 11:00";
+        String result = methods.loadClassroomSchedule("AU01");
+        assertEquals(expResult, result);
+    }
 }
