@@ -12,6 +12,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import pkgClasses.*;
+import pkgExceptions.ExceptionSchedule;
 
 /**
  *
@@ -380,22 +381,41 @@ public class clsMetodsTest {
         assertEquals(expNameResult, NameResult);
     }
     
-    //IMCOMPLETO
     @Test
     public void insertSubjectSchedule() {
         System.out.println("Testing insertSubjectSchedule-clsMethods...");
         clsMetods methods = new clsMetods();
-        clsFaculty facultad = new clsFaculty("Computación");
-        methods.getLstFaculty().add(facultad);
-        clsSubject curso = new clsTheoricalSubject(4, "Estructuras de Datos", "www.Datos2.com");
-        methods.getLstFaculty().get(0).getLstSubject().add(curso);
-        clsSemester semestre = new clsSemester("I", "2013");
-        methods.getLstSemester().add(semestre);
+        methods.getLstSemester().add(new clsSemester("I", "2013"));
+        methods.insertSemesterSubject("I", "2013", "Estructuras de Datos");
+        methods.getLstFaculty().add(new clsFaculty("Computación"));
+        methods.getLstFaculty().get(0).getLstSubject().add(new clsPracticalSubject(4, "Estructuras de Datos", "Windows", "Presentaciones"));
+        methods.getLstUsers().add(new clsTeacher("lvalerio", "Lorena Valerio", "ovale"));
+        methods.insertFacultyTeacher("Computación", "lvalerio");
+        methods.insertClassroom("LaboratorioN1", 1, "Primer piso", 24, true, true);
+        methods.insertSubjectClassroom("I", "2013", "Estructuras de Datos", "LaboratorioN1");
+        methods.insertTeacherSubject("lvalerio", "Estructuras de Datos");
+        methods.insertSemesterSubject("I", "2013", "Estructuras de Datos");
         
-        //String expNameResult = "Estructuras de Datos";
-        //methods.insertTeacherSubject("lvalerio", "Estructuras de Datos");
-        //String NameResult = methods.getLstFaculty().get(0).getLstTeacher().get(0).getLstSubject().get(0).getSubjectName();
-        //assertEquals(expNameResult, NameResult);
+        try {
+            methods.insertSubjectSchedule("I", "2013", "Estructuras de Datos", new clsSchedule("Martes", "8:00", "11:00"));
+        } catch (ExceptionSchedule ex) {
+            System.out.println(ex.toString());
+        }
+        
+        String expSubject   = "Estructuras de Datos";
+        String expDay       = "Martes";
+        String expStarSched = "8:00";
+        String expEndSched  = "11:00";
+        
+        String resultSubject    = methods.getLstSemester().get(0).getLstSubject().get(0).getSubjectName();
+        String resultDay        = methods.getLstSemester().get(0).getLstSubject().get(0).getSchedule().getDay();
+        String resultStarSched  = methods.getLstSemester().get(0).getLstSubject().get(0).getSchedule().getStarSchedule();
+        String resultEndSched   = methods.getLstSemester().get(0).getLstSubject().get(0).getSchedule().getEndSchedule();
+        
+        assertEquals(expSubject, resultSubject);
+        assertEquals(expDay, resultDay);
+        assertEquals(expStarSched, resultStarSched);
+        assertEquals(expEndSched, resultEndSched);
     }
     
     @Test
@@ -447,7 +467,7 @@ public class clsMetodsTest {
         materia.setSchedule(horario);
         semestre.getLstSubject().add(materia);
         methods.getLstSemester().add(semestre);
-        String expResult = "Caculo - Martes -> 08:00 to 11:00\n";
+        String expResult = "Calculo - Martes -> 08:00 to 11:00\n";
         String result = methods.loadSubjects("I - 2013");
         assertEquals(expResult, result);
     }
@@ -462,9 +482,9 @@ public class clsMetodsTest {
         materia.setSchedule(horario);
         semestre.getLstSubject().add(materia);
         methods.getLstSemester().add(semestre);
-        String expResult = "Caculo - Martes -> 08:00 to 11:00\n";
+        String expResult = "Calculo - Martes -> 08:00 to 11:00\n";
         clsTeacher profe = new clsTeacher("Ballestero", "Esteban", "12345");
-        profe.getLstSubject().add(new clsTheoricalSubject(4, "Calculo", ""));
+        profe.getLstSubject().add(materia);
         String result = methods.loadSubjectsTeacher(profe, "I - 2013");
         assertEquals(expResult, result);
     }
